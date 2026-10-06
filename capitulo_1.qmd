@@ -1,0 +1,42 @@
+# R & LA IDE
+
+[R](https://www.r-project.org/) es un lenguaje de programación y un entorno de software libre (código abierto) especializado en computación estadística, análisis de datos y gráficos. En el campo de la bioinformática, R se ha convertido en uno de los estándares fundamentales de la industria y la investigación científica.
+
+- **Enfoque analítico**: Fue diseñado específicamente por y para estadísticos, investigadores y científicos de datos.
+
+- **Ecosistema de paquetes**: Cuenta con miles de [librerías](https://cran.r-project.org/web/packages/available_packages_by_name.html) adicionales que permiten desde análisis genómicos complejos hasta la manipulación de millones de eventos celulares.
+
+- **Comunidad**: Posee una comunidad científica y académica global muy activa que constantemente desarrolla nuevas metodologías y herramientas de código abierto
+
+:::{.callout-note}
+En **citometría de flujo**, R se utiliza como un entorno integral para sustituir o complementar los programas comerciales tradicionales, permitiendo automatizar análisis, procesar decenas de archivos .fcs en lote de forma reproducible y aplicar algoritmos de alta dimensión.
+:::
+
+## ¿**Por qué usar R en lugar de software manual**?
+
+- **Automatización y escalabilidad**: Un análisis manual en interfaces visuales requiere trazar compuertas (gates) muestra por muestra. En R, una rutina procesa cientos de archivos en minutos con los mismos parámetros exactos.
+
+- **Control de sesgo**: Las compuertas algorítmicas y estadísticas reducen la variabilidad inter-operador típica del gating manual.
+
+- **Manejo de citometría multiparamétrica**: En paneles modernos de más de 20 a 50 parámetros (como en citometría espectral o CyTOF/citometría de masas), el análisis bivariado clásico es insuficiente. R aporta algoritmos de reducción de dimensionalidad y agrupamiento no supervisado.
+
+
+# POSITRON
+
+[Positron](https://positron.posit.co/) es el entorno de desarrollo integrado (IDE) de última generación creado por Posit (la empresa detrás de RStudio). Está construido sobre el núcleo de código abierto de Code - OSS (la misma base técnica de Visual Studio Code), pero diseñado específicamente como un espacio de trabajo para la ciencia de datos en R y Python.
+
+A diferencia de VS Code estándar —que requiere configurar múltiples extensiones— o del RStudio clásico —que fue pensado originalmente casi en exclusiva para R—, Positron viene preconfigurado con una arquitectura moderna que potencia enormemente el análisis bioinformático y la citometría de flujo.
+
+- **ADN moderno y abierto**: Está construido sobre estándares abiertos (utilizando como base Code OSS, la misma plataforma tecnológica de Visual Studio Code), lo que permite aprovechar extensiones y una interfaz altamente personalizable.
+
+- **Enfoque multi-lenguaje (Políglota)**: A diferencia de RStudio (enfocado principalmente en R), Positron soporta de forma nativa y simultánea tanto R como Python, permitiendo trabajar con ambos lenguajes en un mismo proyecto sin fricciones.
+
+- **Herramientas interactivas integradas**: Combina la comodidad de una interfaz orientada a datos (como un visor avanzado de dataframes, un panel dedicado a gráficos interactivos y un inspector de variables muy potente) con la flexibilidad de un editor de código moderno.   
+
+# ACTIVIDADES DE APRENDIZAJE
+
+---
+
+<div style="text-align: center; margin-top: 3rem; color: #6c757d; font-size: 0.9rem;">
+  Hecho con 💙 por Jairo
+</div>

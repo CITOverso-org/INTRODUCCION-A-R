@@ -1,0 +1,71 @@
+project:
+  type: book
+
+book:
+  title: "DEL CITÓMETRO A LA CONSOLA"
+  subtitle: "Fundamentos de R para el manejo de datos" 
+  author: "Jairo Ricardo Villanueva-Toledo"
+  date: today
+  chapters:
+    - index.qmd
+    - licencia.qmd
+    - prefacio.qmd
+    - intro.qmd
+    - Autor.qmd
+    - part: "I. FUNDAMENTOS"
+      chapters:
+        - capitulo_1.qmd
+        - capitulo_2.qmd
+        - capitulo_3.qmd
+    - part: "II. XXX"
+      chapters:
+        - capitulo_4.qmd
+        - capitulo_5.qmd
+    - summary.qmd
+    - references.qmd
+  page-footer:
+    left: "© 2026 Jairo Ricardo Villanueva-Toledo."
+    right:
+      - text: "Licencia: CC BY-NC-ND 4.0"
+        href: "https://creativecommons.org/licenses/by-nc-nd/4.0/deed.es"
+      - icon: github
+        href: "https://github.com/jvillanuevatoledo"
+
+bibliography: references.bib
+
+csl: vancouver-nlm.csl
+
+citation:
+  type: book
+  id: villanueva-toledo2026introduccion
+  author:
+    - name:
+        given: "Jairo Ricardo"
+        family: "Villanueva-Toledo"
+      orcid: 0000-0001-9532-3678
+      affiliation: "IxM-SECIHTI / HRAEPY-IMSS BIENESTAR"
+  url: https://jvillanuevatoledo.github.io/r-para-citometristas/
+  doi: 10.5281/zenodo.XXXXXXX  # Opcional: El DOI que te dé Zenodo
+  isbn: 978-XX-XXXX-XXX-X      # Opcional: El ISBN de la versión web
+  publisher: "Publicación Independiente"
+
+format:
+  html:
+    theme:
+      - cosmo
+      - brand
+    highlight-style: ayu
+    toc: true
+    toc-depth: 3
+    code-copy: true
+  pdf:
+    documentclass: scrreprt
+
+lang: es
+
+language:
+  title-block-author-single: "Autor"
+  
+execute:
+  eval: true
+  echo: true

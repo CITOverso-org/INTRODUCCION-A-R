@@ -1,0 +1,81 @@
+# **REPOSITORIOS Y PAQUETES**
+
+## Repositorios
+
+Un **repositorio** (o coloquialmente *repo*) es el espacio o carpeta donde se almacena un proyecto  junto con todo el historial de cambios que ha tenido a lo largo del tiempo. A diferencia de una carpeta común en la computadora, un repositorio incluye una base de datos ocultos (como la carpeta `.git` en Git) que registra cada modificación, quién la realizó cuándo ocurrió y porqué.
+
+### Elementos clave de un repositorio
+
+**Archivos de trabajo**: El código, texto, documentos o imágenes que componen el traycto actual.
+
+**Historial** (`Commits`): Instantáneas guardadas en el tiempo. Cada vez que se confirman cambios, se crea un punto de restauración con mensajes explicativos.
+
+**Ramas** (Branches): Líneas de tiempo paralelas que permiten desarrollar nuevas funciones o experimentos sin alterar el trabajo principal.
+
+**Metadatos**: información sobre autores, fechas y etiquetas de versiones (por ejemplo, v1.0).
+
+|Tipo   |Ubicación               | Función principal|
+|-------|------------------------|------------------|
+|Local  |En la propia computadora| Donde editas los archivos, haces pruebas y registras cambios sin depender de internet |
+|Remoto | En un servidor o nube (GitHu, GitLab, BitBucket)| Sirve de punto central para compartir código, hacer respaldos y colaborar en equipo |
+
+: Tipos de repositorios
+
+**GESTORES DE PAQUETES**: Las herramientas de línea de comandos para descargar e instalar paquetes.
+
+Existen principalmente dos grandes vías para instalar paquetes en Python, cada una con su propio repositorio principal.
+
+    1. Conda (Ideal para ciencia de datos).
+
+```bash    
+conda install nombre_del_paquete
+```
+
+Existe un canal de conda impulsado por la comunidad con paquetes más actualizados: **conda-forge**
+
+```bash
+conda install -c conda-forge nombre_del_paquete
+```
+
+    2. Pip (El estándar de Python).
+    PIP (Pip Installs Packages)
+    
+```bash
+pip install nombre_del_paquete
+```
+
+    3. Instalación directa desde el código fuente (GitHub / GitLab)
+
+```bash
+pip install git+https://github.com/usuario/nombre_del_repositorio.git
+```
+## ¿Es posible usar tanto PIP como CONDA simultáneamente?
+Respuest corta, si. Para usar ambos simultáneamente de forma segura en los entornos de Miniconda, se dede seguir estrictamente el siguiente flujo de trabajo.
+ 
+La regla de oro: Conda primero, Pip al final.
+
+1. Instalar todo lo que se pueda con Conda:
+Usar siempre `conda install`(y preferiblemente el canda `conda-forge`) par ainstalar los paquetes principales, especialmente los orientados a análisis de datos, matemáticas o gráficos (como `numpy`, `pandas`, `matplotlib`). Estos paqeutes suelen tener dependencias complejas que Conda maneja la perfección.
+
+2. Usar PIP solo para lo que falte: Una vez que se haya instalado todo lo posible con Conda, si se necesita un paquete muy específico o reciente que no está en los repositorios de Conda, entonces y solo entonces, usar `pip install`.
+
+3. No regresar a Conda: Una vez que se ha ejecutado `pip` dentro de un entorno, evitar volver a usar `conda install` en ese mismo entorno. Si se necesita instalar algo más con Conda, lo ideal es crear un entorno nuevo para evitar conflictos de depencias.
+
+### Actualización de paquetes
+Si se desea actualizar un paquete específico a su versión más reciente
+
+```bash
+conda update nombre_del_paquete
+```
+
+Si se desea actualizar todos los paquetes del entorno al mismo tiempo:
+
+```bash
+conda update --all
+```
+
+### Limpieza de la memoria caché de Conda
+
+```bash
+conda clean --all -y
+---

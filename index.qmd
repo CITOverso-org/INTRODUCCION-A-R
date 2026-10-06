@@ -1,0 +1,20 @@
+::: {.d-none}
+# Portada {.unnumbered}
+:::
+
+```{=html}
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const headings = document.querySelectorAll('.quarto-title-meta-heading');
+  headings.forEach(el => {
+    if (el.textContent.includes('Autor/a')) {
+      el.textContent = 'Autor';
+    }
+  });
+});
+</script>
+```
+
+::: {.content-visible when-format="html"}
+![](imagenes/portada_1.jpg){fig-align="center"}
+:::

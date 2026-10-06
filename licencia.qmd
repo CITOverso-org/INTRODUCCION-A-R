@@ -1,0 +1,20 @@
+## Licencia {.unnumbered}
+
+### CÓDIGO Y CONTENIDO PROPIO
+El código fuente de los ejemplos y análisis presentados en este libro se distribuye bajo la licencia MIT (libre para su uso y modificación en tus propios análisis). 
+
+El contenido textual, explicaciones e imágenes de este libro web están sujetos a la licencia **Creative Commons Atribución-NoComercial-SinDerivadas 4.0 Internacional (CC BY-NC-ND 4.0)**.
+
+La versión oficial consolidada, revisada y optimizada para formatos impresos y lectores electrónicos (eBook) estará disponible próximamente a través de los principales canales de distribución editorial.
+
+::: {.callout-note title="NOTA DEL AUTOR"}
+*Nos reservamos el derecho de publicar versiones futuras con contenido adicional, correcciones y mejoras en la arquitectura del código. Para consultas sobre derechos de uso comercial, reproducción o distribución masiva, por favor contacta al autor a través de su perfil académico o redes sociales profesionales.*
+:::
+
+---
+
+### Conjuntos de datos (_**datasets**_) de terceros
+
+Para el desarrollo de los ejemplos y casos prácticos de análisis presentados en esta obra, se ha utilizado el dataset original **"AutoSpectral: Full Workflow Example" (V1)**, creado por **Oliver Burton, James Dooley y Adrian Liston (2025)** y alojado en *Mendeley Data* (doi: [10.17632/ch5dnspd79.1](https://doi.org/10.17632/ch5dnspd79.1)).
+
+Este conjunto de datos está disponible bajo la licencia **Creative Commons Attribution 4.0 International (CC BY 4.0)**. Los datos originales fueron procesados y modificados por el autor de este libro con fines estrictamente didácticos (incluyendo tareas de limpieza, filtrado y reestructuración para adaptar el flujo de trabajo a los ejemplos del texto). Puede consultar los términos completos de la licencia de este dataset en: [https://creativecommons.org/licenses/by/4.0/](https://creativecommons.org/licenses/by/4.0/).

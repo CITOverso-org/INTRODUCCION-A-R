@@ -1,0 +1,247 @@
+[
+  {
+    "objectID": "intro.html",
+    "href": "intro.html",
+    "title": "Introducción",
+    "section": "",
+    "text": "El entorno de desarrollo: Positron\nLa citometría de flujo es una de las tecnologías pilares de la investigación biomédica contemporánea, fundamental para la caracterización fenotípica y funcional de poblaciones celulares a resolución de célula única. Desde su concepción, la disciplina ha operado bajo un flujo de trabajo lineal bien establecido: adquisición de la muestra, compensación, delimitación manual de poblaciones (gating) mediante gráficos bidimensionales y exportación de estadísticas descriptivas. Este enfoque, implementado a través de programas comerciales con interfaces gráficas (point-and-click), ha sido el estándar durante décadas para paneles convencionales.\nSin embargo, a medida que los experimentos aumentan en tamaño de muestra y número de marcadores, el análisis tradicional tropieza con tres barreras prácticas:\nPara resolver estas limitaciones, la comunidad científica recurre al lenguaje de programación R y a su ecosistema bioinformático Bioconductor. R proporciona un entorno transparente, auditable y estandarizado para gestionar datos biológicos con total rigor metodológico.\nHistóricamente, la adopción de R ha estado ligada al uso de RStudio. No obstante, las necesidades actuales de la ciencia de datos exigen herramientas más versátiles y ligeras. Por ello, este libro adopta Positron como su entorno de desarrollo integrado (IDE).\nDesarrollado por Posit sobre la arquitectura de Code-OSS, Positron combina la familiaridad y potencia de las consolas de datos (explorador de variables interactivo, visualizador avanzado de gráficos y terminales dinámicas) con una interfaz moderna y ágil. Para el citometrista que escribe sus primeras líneas de código, Positron minimiza la fricción inicial gracias a su asistencia de autocompletado y un entorno intuitivo para inspeccionar tablas y objetos en memoria.",
+    "crumbs": [
+      "Introducción"
+    ]
+  },
+  {
+    "objectID": "summary.html",
+    "href": "summary.html",
+    "title": "Síntesis",
+    "section": "",
+    "text": "In summary, this book has no content whatsoever.",
+    "crumbs": [
+      "Síntesis"
+    ]
+  },
+  {
+    "objectID": "references.html",
+    "href": "references.html",
+    "title": "Referencias",
+    "section": "",
+    "text": "1. Knuth DE. Literate programming. Comput J. 1984\nMay;27(2):97–111. doi:10.1093/comjnl/27.2.97",
+    "crumbs": [
+      "Referencias"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "DEL CITÓMETRO A LA CONSOLA",
+    "section": "",
+    "text": "Portada",
+    "crumbs": [
+      "Portada"
+    ]
+  },
+  {
+    "objectID": "capitulo_1.html",
+    "href": "capitulo_1.html",
+    "title": "1  R & LA IDE",
+    "section": "",
+    "text": "1.1 ¿Por qué usar R en lugar de software manual?\nR es un lenguaje de programación y un entorno de software libre (código abierto) especializado en computación estadística, análisis de datos y gráficos. En el campo de la bioinformática, R se ha convertido en uno de los estándares fundamentales de la industria y la investigación científica.",
+    "crumbs": [
+      "I. FUNDAMENTOS",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>R & LA IDE</span>"
+    ]
+  },
+  {
+    "objectID": "capitulo_5.html",
+    "href": "capitulo_5.html",
+    "title": "5  CAPÍTULO 5",
+    "section": "",
+    "text": "Hecho con 💙 por Jairo",
+    "crumbs": [
+      "II. XXX",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>CAPÍTULO 5</span>"
+    ]
+  },
+  {
+    "objectID": "capitulo_2.html",
+    "href": "capitulo_2.html",
+    "title": "2  PAQUETES",
+    "section": "",
+    "text": "2.1 Paquetes de R\nUn paquete de R es un conjunto estandarizado de funciones, código, datos y documentación que amplía las capacidades base del lenguaje. En el ámbito de la citometría de flujo, un paquete funciona como una caja de herramientas especializada que traduce algoritmos complejos y operaciones estadísticas en comandos sencillos, permitiendo procesar millones de eventos celulares sin tener que programar cada procedimiento desde cero.",
+    "crumbs": [
+      "I. FUNDAMENTOS",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>**PAQUETES**</span>"
+    ]
+  },
+  {
+    "objectID": "capitulo_3.html",
+    "href": "capitulo_3.html",
+    "title": "3  REPOSITORIOS",
+    "section": "",
+    "text": "3.1 Repositorio de paquetes de R\nUn repositorio de paquetes de R es una plataforma centralizada que almacena, organiza y distribuye colecciones de código, funciones, datos y documentación listos para ser instalados y utilizados en el entorno R.",
+    "crumbs": [
+      "I. FUNDAMENTOS",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>**REPOSITORIOS**</span>"
+    ]
+  },
+  {
+    "objectID": "capitulo_4.html",
+    "href": "capitulo_4.html",
+    "title": "4  ACTIVIDADES DE APRENDIZAJE",
+    "section": "",
+    "text": "5 \n\n\nHecho con 💙 por Jairo",
+    "crumbs": [
+      "II. XXX",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>ACTIVIDADES DE APRENDIZAJE</span>"
+    ]
+  },
+  {
+    "objectID": "capitulo_1.html#qué-es-un-repositorio-de-paquetes-de-r",
+    "href": "capitulo_1.html#qué-es-un-repositorio-de-paquetes-de-r",
+    "title": "1  REPOSITORIOS Y PAQUETES",
+    "section": "",
+    "text": "Hecho con 💙 por Jairo",
+    "crumbs": [
+      "I. FUNDAMENTOS",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>**REPOSITORIOS Y PAQUETES**</span>"
+    ]
+  },
+  {
+    "objectID": "capitulo_1.html#repositorio-de-paquetes-de-r",
+    "href": "capitulo_1.html#repositorio-de-paquetes-de-r",
+    "title": "1  REPOSITORIOS Y PAQUETES",
+    "section": "",
+    "text": "1.1.1 CRAN\nMientras que el repositorio genérico más conocido es CRAN (Comprehensive R Archive Network), la comunidad científica utiliza repositorios especializados que agrupan herramientas para disciplinas específicas, como la bioinformática.\n\n\n1.1.2 Bioconductor\nEn el análisis de datos de citometría de flujo, el repositorio de referencia indiscutible es Bioconductor. A diferencia de los repositorios generales, Bioconductor está optimizado para la investigación biomédica y ofrece ventajas esenciales:\nActualizaciones coordinadas: Los paquetes se lanzan y actualizan dos veces al año, garantizando la compatibilidad entre versiones.\nEstandarización: Define clases de datos comunes (como flowFrame y flowSet) para que diferentes herramientas interactúen sin fricciones al leer archivos estándar de citometría (.fcs).\n\n\nHecho con 💙 por Jairo",
+    "crumbs": [
+      "I. FUNDAMENTOS",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>**REPOSITORIOS Y PAQUETES**</span>"
+    ]
+  },
+  {
+    "objectID": "capitulo_1.html#paquetes-en-citometría-de-flujo",
+    "href": "capitulo_1.html#paquetes-en-citometría-de-flujo",
+    "title": "1  PAQUETES",
+    "section": "1.2 Paquetes en citometría de flujo",
+    "text": "1.2 Paquetes en citometría de flujo\nLa citometría de flujo genera archivos complejos (.fcs) con datos multidimensionales difíciles de manejar con software tradicional. Los paquetes especializados están diseñados para cubrir cada etapa del flujo de trabajo analítico:\n\nLectura e importación: Permiten cargar archivos .fcs y estructurar los datos en matrices organizadas dentro de R.\nPreprocesamiento: Facilitan la compensación de fluorescencia (corrección de la superposición espectral entre fluoróforos) y las transformaciones matemáticas de los ejes.\nIdentificación celular (gating): Ofrecen herramientas para delimitar poblaciones celulares de forma manual, reproducible o mediante algoritmos automatizados.\nVisualización avanzada: Generan gráficos de dispersión, mapas de calor y proyecciones de alta dimensión (como t-SNE o UMAP).\n\nEjemplos esenciales de paquetes citométricos\n\nflowCore: Es la columna vertebral del ecosistema; define las clases de datos básicas (como flowFrame) para manipular la información cruda.\nflowViz: Se centra en la representación gráfica, permitiendo crear histogramas y diagramas de contorno adaptados a la citometría.\nopenCyto: Automatiza el proceso de gating para estandarizar la compuerta analítica en grandes estudios clínicos.\n\nEn resumen: Los paquetes actúan como el puente indispensable que transforma los datos crudos del citómetro en descubrimientos biológicos interpretables.",
+    "crumbs": [
+      "I. FUNDAMENTOS",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>**PAQUETES**</span>"
+    ]
+  },
+  {
+    "objectID": "capitulo_2.html#repositorio-de-paquetes-de-r",
+    "href": "capitulo_2.html#repositorio-de-paquetes-de-r",
+    "title": "2  REPOSITORIOS",
+    "section": "",
+    "text": "2.1.1 CRAN\nMientras que el repositorio genérico más conocido es CRAN (Comprehensive R Archive Network), la comunidad científica utiliza repositorios especializados que agrupan herramientas para disciplinas específicas, como la bioinformática.\n\n\n2.1.2 Bioconductor\nEn el análisis de datos de citometría de flujo, el repositorio de referencia indiscutible es Bioconductor. A diferencia de los repositorios generales, Bioconductor está optimizado para la investigación biomédica y ofrece ventajas esenciales:\nActualizaciones coordinadas: Los paquetes se lanzan y actualizan dos veces al año, garantizando la compatibilidad entre versiones.\nEstandarización: Define clases de datos comunes (como flowFrame y flowSet) para que diferentes herramientas interactúen sin fricciones al leer archivos estándar de citometría (.fcs).",
+    "crumbs": [
+      "I. FUNDAMENTOS",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>**REPOSITORIOS**</span>"
+    ]
+  },
+  {
+    "objectID": "capitulo_3.html#ide-positron",
+    "href": "capitulo_3.html#ide-positron",
+    "title": "3  R y su Entorno de Lenguaje Integrado (IDE)",
+    "section": "",
+    "text": "ADN moderno y abierto: Está construido sobre estándares abiertos (utilizando como base Code OSS, la misma plataforma tecnológica de Visual Studio Code), lo que permite aprovechar extensiones y una interfaz altamente personalizable.\nEnfoque multi-lenguaje (Pologlota): A diferencia de RStudio (enfocado principalmente en R), Positron soporta de forma nativa y simultánea tanto R como Python, permitiendo trabajar con ambos lenguajes en un mismo proyecto sin fricciones.\nHerramientas interactivas integradas: Combina la comodidad de una interfaz orientada a datos (como un visor avanzado de dataframes, un panel dedicado a gráficos interactivos y un inspector de variables muy potente) con la flexibilidad de un editor de código moderno.",
+    "crumbs": [
+      "I. FUNDAMENTOS",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>R y su Entorno de Lenguaje Integrado (IDE)</span>"
+    ]
+  },
+  {
+    "objectID": "capitulo_3.html#repositorio-de-paquetes-de-r",
+    "href": "capitulo_3.html#repositorio-de-paquetes-de-r",
+    "title": "3  REPOSITORIOS",
+    "section": "",
+    "text": "3.1.1 CRAN\nMientras que el repositorio genérico más conocido es CRAN (Comprehensive R Archive Network), la comunidad científica utiliza repositorios especializados que agrupan herramientas para disciplinas específicas, como la bioinformática.\n\n\n3.1.2 Bioconductor\nEn el análisis de datos de citometría de flujo, el repositorio de referencia indiscutible es Bioconductor. A diferencia de los repositorios generales, Bioconductor está optimizado para la investigación biomédica y ofrece ventajas esenciales:\n\nActualizaciones coordinadas: Los paquetes se lanzan y actualizan dos veces al año, garantizando la compatibilidad entre versiones.\nEstandarización: Define clases de datos comunes (como flowFrame y flowSet) para que diferentes herramientas interactúen sin fricciones al leer archivos estándar de citometría (.fcs).\n\nR cuenta con una suite especializada de paquetes para cada etapa del flujo de trabajo:\n\nEl ecosistema clave en Bioconductor\n\n\n\n\n\n\n\nEtapa\nPaquetes de R\nFunción principal\n\n\n\n\nImportación e infraestructura\nflowCore\nLectura de archivos estándar .fcs, manipulación de metadatos, matrices de compensación y objetos flowFrame / flowSet\n\n\nGating reproducible\nflowWorkspace, openCyto\nImportación de espacios de trabajo y gatings automáticas basadas en densidad y modelos de mezclas gaussianas\n\n\nVisualización estándar\nflowViz, ggcyto\nExtensión de ggplot2 adaptada para citometría: histogramas, gráficos de densidad y visualización de compuertas 2D\n\n\nReducción de dimensionalidad\nRtsne, uwot (UMAP)\nProyección de poblaciones celulares complejas en espacios bidimensionales interactivos.\n\n\nClustering no supervisado\nFlowSOM, PhenoGraph\nAgrupamiento automatizado de subpoblaciones celulares utilizando mapas autoorganizados y grafos de vecindad.\n\n\nAnálisis diferencial\ndiffcyt\nDetección estadística de cambios en la abundancia de poblaciones o en la expresión de marcadores funcionales entre condiciones experimentales.",
+    "crumbs": [
+      "I. FUNDAMENTOS",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>**REPOSITORIOS**</span>"
+    ]
+  },
+  {
+    "objectID": "capitulo_2.html#paquetes-en-citometría-de-flujo",
+    "href": "capitulo_2.html#paquetes-en-citometría-de-flujo",
+    "title": "2  PAQUETES",
+    "section": "2.2 Paquetes en citometría de flujo",
+    "text": "2.2 Paquetes en citometría de flujo\nLa citometría de flujo genera archivos complejos (.fcs) con datos multidimensionales difíciles de manejar con software tradicional. Los paquetes especializados están diseñados para cubrir cada etapa del flujo de trabajo analítico:\n\nLectura e importación: Permiten cargar archivos .fcs y estructurar los datos en matrices organizadas dentro de R.\nPreprocesamiento: Facilitan la compensación de fluorescencia (corrección de la superposición espectral entre fluoróforos) y las transformaciones matemáticas de los ejes.\nIdentificación celular (gating): Ofrecen herramientas para delimitar poblaciones celulares de forma manual, reproducible o mediante algoritmos automatizados.\nVisualización avanzada: Generan gráficos de dispersión, mapas de calor y proyecciones de alta dimensión (como t-SNE o UMAP).\n\nEjemplos esenciales de paquetes citométricos\n\nflowCore: Es la columna vertebral del ecosistema; define las clases de datos básicas (como flowFrame) para manipular la información cruda.\nflowViz: Se centra en la representación gráfica, permitiendo crear histogramas y diagramas de contorno adaptados a la citometría.\nopenCyto: Automatiza el proceso de gating para estandarizar la compuerta analítica en grandes estudios clínicos.\n\nEn resumen: Los paquetes actúan como el puente indispensable que transforma los datos crudos del citómetro en descubrimientos biológicos interpretables.",
+    "crumbs": [
+      "I. FUNDAMENTOS",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>**PAQUETES**</span>"
+    ]
+  },
+  {
+    "objectID": "capitulo_1.html#por-qué-usar-r-en-lugar-de-software-manual",
+    "href": "capitulo_1.html#por-qué-usar-r-en-lugar-de-software-manual",
+    "title": "1  R & LA IDE",
+    "section": "",
+    "text": "Automatización y escalabilidad: Un análisis manual en interfaces visuales requiere trazar compuertas (gates) muestra por muestra. En R, una rutina procesa cientos de archivos en minutos con los mismos parámetros exactos.\nControl de sesgo: Las compuertas algorítmicas y estadísticas reducen la variabilidad inter-operador típica del gating manual.\nManejo de citometría multiparamétrica: En paneles modernos de más de 20 a 50 parámetros (como en citometría espectral o CyTOF/citometría de masas), el análisis bivariado clásico es insuficiente. R aporta algoritmos de reducción de dimensionalidad y agrupamiento no supervisado.",
+    "crumbs": [
+      "I. FUNDAMENTOS",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>R & LA IDE</span>"
+    ]
+  },
+  {
+    "objectID": "capitulo_1.html#positron",
+    "href": "capitulo_1.html#positron",
+    "title": "1  R",
+    "section": "1.2 POSITRON",
+    "text": "1.2 POSITRON\nPositron es el entorno de desarrollo integrado (IDE) de última generación creado por Posit (la empresa detrás de RStudio). Está construido sobre el núcleo de código abierto de Code - OSS (la misma base técnica de Visual Studio Code), pero diseñado específicamente como un espacio de trabajo para la ciencia de datos en R y Python.\nA diferencia de VS Code estándar —que requiere configurar múltiples extensiones— o del RStudio clásico —que fue pensado originalmente casi en exclusiva para R—, Positron viene preconfigurado con una arquitectura moderna que potencia enormemente el análisis bioinformático y la citometría de flujo.\n\n\nHecho con 💙 por Jairo",
+    "crumbs": [
+      "I. FUNDAMENTOS",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>R</span>"
+    ]
+  },
+  {
+    "objectID": "capitulo_4.html#ide-positron",
+    "href": "capitulo_4.html#ide-positron",
+    "title": "4  R y su Entorno de Lenguaje Integrado (IDE)",
+    "section": "",
+    "text": "ADN moderno y abierto: Está construido sobre estándares abiertos (utilizando como base Code OSS, la misma plataforma tecnológica de Visual Studio Code), lo que permite aprovechar extensiones y una interfaz altamente personalizable.\nEnfoque multi-lenguaje (Pologlota): A diferencia de RStudio (enfocado principalmente en R), Positron soporta de forma nativa y simultánea tanto R como Python, permitiendo trabajar con ambos lenguajes en un mismo proyecto sin fricciones.\nHerramientas interactivas integradas: Combina la comodidad de una interfaz orientada a datos (como un visor avanzado de dataframes, un panel dedicado a gráficos interactivos y un inspector de variables muy potente) con la flexibilidad de un editor de código moderno.",
+    "crumbs": [
+      "II. XXX",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>R y su Entorno de Lenguaje Integrado (IDE)</span>"
+    ]
+  },
+  {
+    "objectID": "Autor.html",
+    "href": "Autor.html",
+    "title": "Acerca del Autor",
+    "section": "",
+    "text": "El autor es Médico Cirujano por la Universidad Autónoma de Yucatán (UADY). Posteriormente, realizó estudios de posgrado en el Centro de Investigación y de Estudios Avanzados del Instituto Politécnico Nacional (CINVESTAV-IPN), sede Zacatenco, en la Ciudad de México, donde obtuvo los grados de Maestría y Doctorado en Ciencias con especialidad en Genética y Biología Molecular.\nDurante su formación de posgrado incursionó de manera paralela en bioinformática y citometría de flujo, áreas que marcarían de forma decisiva su trayectoria profesional. En bioinformática trabajó en análisis de secuencias génicas utilizando entornos UNIX y el lenguaje Perl, incluyendo búsquedas con BLAST y diseño de primers. De manera simultánea, desarrolló experiencia en citometría de flujo aplicada al análisis del ciclo celular, integrando herramientas computacionales con aproximaciones experimentales para el estudio de procesos biológicos complejos. Actualmente complementa esta línea de trabajo mediante el uso de los lenguajes de programación R y Python para el análisis, procesamiento y visualización de datos biológicos.\nTras concluir el doctorado, se desempeñó como asesor científico comercial en una empresa líder en el desarrollo y comercialización de citómetros de flujo, experiencia que le permitió adquirir un conocimiento profundo de la instrumentación, sus fundamentos físicos y ópticos, así como sus aplicaciones en investigación biomédica y diagnóstico clínico.\nActualmente es académico del programa Investigadores por México de la Secretaría de Ciencia, Humanidades, Tecnología e Innovación (SECIHTI), comisionado al Hospital de Alta Especialidad de la Península de Yucatán (HRAEPY) del IMSS-BIENESTAR. Además, es profesor del capítulo de Citometría de Flujo de la Sociedad Mexicana de Inmunología (SMI), donde participa activamente en la formación de especialistas mediante la impartición de talleres y cursos sobre fundamentos, diseño experimental y análisis avanzado de datos en citometría de flujo.",
+    "crumbs": [
+      "Acerca del Autor"
+    ]
+  },
+  {
+    "objectID": "licencia.html",
+    "href": "licencia.html",
+    "title": "Licencia",
+    "section": "",
+    "text": "CÓDIGO Y CONTENIDO PROPIO\nEl código fuente de los ejemplos y análisis presentados en este libro se distribuye bajo la licencia MIT (libre para su uso y modificación en tus propios análisis).\nEl contenido textual, explicaciones e imágenes de este libro web están sujetos a la licencia Creative Commons Atribución-NoComercial-SinDerivadas 4.0 Internacional (CC BY-NC-ND 4.0).\nLa versión oficial consolidada, revisada y optimizada para formatos impresos y lectores electrónicos (eBook) estará disponible próximamente a través de los principales canales de distribución editorial.\n\n\n\n\n\n\nNotaNOTA DEL AUTOR\n\n\n\nNos reservamos el derecho de publicar versiones futuras con contenido adicional, correcciones y mejoras en la arquitectura del código. Para consultas sobre derechos de uso comercial, reproducción o distribución masiva, por favor contacta al autor a través de su perfil académico o redes sociales profesionales.\n\n\n\n\n\nConjuntos de datos (datasets) de terceros\nPara el desarrollo de los ejemplos y casos prácticos de análisis presentados en esta obra, se ha utilizado el dataset original “AutoSpectral: Full Workflow Example” (V1), creado por Oliver Burton, James Dooley y Adrian Liston (2025) y alojado en Mendeley Data (doi: 10.17632/ch5dnspd79.1).\nEste conjunto de datos está disponible bajo la licencia Creative Commons Attribution 4.0 International (CC BY 4.0). Los datos originales fueron procesados y modificados por el autor de este libro con fines estrictamente didácticos (incluyendo tareas de limpieza, filtrado y reestructuración para adaptar el flujo de trabajo a los ejemplos del texto). Puede consultar los términos completos de la licencia de este dataset en: https://creativecommons.org/licenses/by/4.0/.",
+    "crumbs": [
+      "Licencia"
+    ]
+  },
+  {
+    "objectID": "prefacio.html",
+    "href": "prefacio.html",
+    "title": "Prefacio",
+    "section": "",
+    "text": "La citometría de flujo genera hoy más datos y parámetros que nunca. Aunque las interfaces gráficas comerciales son el punto de partida habitual en el laboratorio, dependen de clics repetitivos, limitan la automatización y dificultan documentar con exactitud cada paso del análisis.\nPara estudiantes e investigadores en ciencias biomédicas, aprender a manejar estos datos mediante código ya no es un lujo técnico, sino una herramienta de trabajo diario. R y el ecosistema Bioconductor ofrecen el entorno estándar para lograrlo: análisis transparentes, reproducibles y adaptados a las necesidades reales del citometrista.\nEste libro, R para citometristas: Guía introductoria, está concebido como una primera aproximación accesible y directa al lenguaje R. No requiere conocimientos previos de programación ni pretende formar expertos en ciencias de la computación. Su objetivo es brindar los fundamentos esenciales para dar los primeros pasos en la consola con confianza y aplicarlos de inmediato a los datos del citómetro.\nA lo largo de sus páginas, el lector aprenderá las bases operativas del análisis digital:\n\nPrimeros pasos en R y RStudio: Instalación del entorno, conceptos básicos de sintaxis y manejo de las estructuras de datos fundamentales para quien proviene del trabajo de mesada.\nEstructuración y manipulación de datos: Lectura de archivos .fcs con paqueterías especializadas de Bioconductor, aprendiendo a transformar las matrices de citometría en estructuras tabulares (data.frame, tibble). Este paso permite al lector familiarizarse con el formato universal de R para ordenar eventos, renombrar marcadores y preparar tablas de resumen.\nReproducibilidad en el laboratorio: Cómo estructurar scripts claros y ordenados que funcionen como una bitácora digital exacta, asegurando que un análisis pueda replicarse paso a paso sin depender de la memoria o de capturas de pantalla.\nVisualización inicial: Generación de gráficos claros y personalizables (histogramas, diagramas de puntos y densidades) listos para reportes de laboratorio o presentaciones de seminario.\n\nAprender código por primera vez implica una pequeña curva de adaptación, pero los beneficios en tiempo, orden y rigor metodológico son inmediatos. Este texto ofrece una puerta de entrada guiada, libre de tecnicismos innecesarios, para transformar la consola de R en una extensión natural del citómetro.",
+    "crumbs": [
+      "Prefacio"
+    ]
+  },
+  {
+    "objectID": "intro.html#estructura-y-alcance-de-este-volumen",
+    "href": "intro.html#estructura-y-alcance-de-este-volumen",
+    "title": "Introducción",
+    "section": "Estructura y alcance de este volumen",
+    "text": "Estructura y alcance de este volumen\nEste primer volumen de R para citometristas está diseñado exclusivamente como un manual de transición y fundamentos. Su meta primordial no es la bioinformática avanzada ni los modelos computacionales complejos, sino dotar al investigador de las bases esenciales para migrar sus datos desde el citómetro hacia el entorno de R, dominando el objeto rey del análisis de datos: la tabla.\nEl contenido sigue una progresión lógica y accesible para el trabajo de laboratorio:\n\nEntorno y primeros pasos en Positron: Instalación del software, configuración del intérprete de R, navegación por la consola y uso efectivo del panel Variables/Environment para inspeccionar lo que cargamos en memoria.\nDe la matriz FCS al mundo tabular (data.frame y variantes): Comprensión de cómo paqueterías como flowCore leen la estructura de un archivo .fcs (metadatos, palabras clave e intensidades) y cómo desmitificar el objeto extrayendo la matriz de eventos celulares para transformarla en estructuras familiares: el data.frame base y sus variantes modernas (tibble y data.table).\nManipulación e inspección de datos celulares: Uso de sintaxis básica y herramientas del ecosistema tidyverse para filtrar filas (eventos celulares), seleccionar columnas (marcadores/fluorocromos), renombrar canales y generar estadísticas descriptivas (medianas de fluorescencia, porcentajes y conteos).\nPreprocesamiento elemental: Nociones básicas sobre cómo se representan las transformaciones matemáticas esenciales en R (Logicle, biexponencial o ArcSinh) para preparar las intensidades antes de graficarlas.\nVisualización gráfica inicial: Creación de gráficos reproducibles de calidad editorial (histogramas univariados, diagramas de dispersión y densidades) mediante ggplot2, controlando escalas, títulos y estéticas para reportes y presentaciones.\n\nAl concluir este volumen, el lector habrá desmitificado la consola de comandos, comprendiendo con claridad qué es un dato de citometría por dentro y cómo manipularlo cómodamente como una tabla de datos en R. Esta base sólida es el paso previo indispensable para abordar, con total seguridad, volúmenes posteriores dedicados al control de calidad automatizado, el gating algorítmico y las técnicas avanzadas de alta dimensionalidad.",
+    "crumbs": [
+      "Introducción"
+    ]
+  }
+]

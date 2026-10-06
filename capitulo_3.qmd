@@ -1,0 +1,38 @@
+# **REPOSITORIOS**
+
+## Repositorio de paquetes de R
+
+Un **repositorio de paquetes** de R es una plataforma centralizada que almacena, organiza y distribuye colecciones de código, funciones, datos y documentación listos para ser instalados y utilizados en el entorno R.
+
+### **CRAN**
+
+Mientras que el repositorio genérico más conocido es [CRAN](https://cran.r-project.org/) (*Comprehensive R Archive Network*), la comunidad científica utiliza repositorios especializados que agrupan herramientas para disciplinas específicas, como la bioinformática.
+
+### **Bioconductor**
+
+En el análisis de datos de citometría de flujo, el repositorio de referencia indiscutible es [Bioconductor](https://www.bioconductor.org/). A diferencia de los repositorios generales, Bioconductor está optimizado para la investigación biomédica y ofrece ventajas esenciales:
+
+- **Actualizaciones coordinadas**: Los paquetes se lanzan y actualizan dos veces al año, garantizando la compatibilidad entre versiones.
+
+- **Estandarización**: Define clases de datos comunes (como flowFrame y flowSet) para que diferentes herramientas interactúen sin fricciones al leer archivos estándar de citometría (.fcs).
+
+R cuenta con una suite especializada de paquetes para cada etapa del flujo de trabajo:
+
+| Etapa | Paquetes de R | Función principal |
+|-------|---------------|-------------------|
+| Importación e infraestructura | `flowCore` | Lectura de archivos estándar .fcs, manipulación de metadatos, matrices de compensación y objetos flowFrame / flowSet |
+| *Gating* reproducible | `flowWorkspace`, `openCyto` | Importación de espacios de trabajo y *gatings* automáticas basadas en densidad y modelos de mezclas gaussianas |
+| Visualización estándar | `flowViz`, `ggcyto` | Extensión de `ggplot2` adaptada para citometría: histogramas, gráficos de densidad y visualización de compuertas 2D |
+| Reducción de dimensionalidad | `Rtsne`, `uwot` (UMAP) | Proyección de poblaciones celulares complejas en espacios bidimensionales interactivos. |
+| Clustering no supervisado | `FlowSOM`, `PhenoGraph` | Agrupamiento automatizado de subpoblaciones celulares utilizando mapas autoorganizados y grafos de vecindad. |
+| Análisis diferencial | `diffcyt` | Detección estadística de cambios en la abundancia de poblaciones o en la expresión de marcadores funcionales entre condiciones experimentales. |
+: El ecosistema clave en Bioconductor
+
+
+# ACTIVIDADES DE APRENDIZAJE
+
+---
+
+<div style="text-align: center; margin-top: 3rem; color: #6c757d; font-size: 0.9rem;">
+  Hecho con 💙 por Jairo
+</div>

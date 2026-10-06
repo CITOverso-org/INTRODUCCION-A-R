@@ -1,0 +1,37 @@
+# Introducción {.unnumbered}
+
+La citometría de flujo es una de las tecnologías pilares de la investigación biomédica contemporánea, fundamental para la caracterización fenotípica y funcional de poblaciones celulares a resolución de célula única. Desde su concepción, la disciplina ha operado bajo un flujo de trabajo lineal bien establecido: adquisición de la muestra, compensación, delimitación manual de poblaciones (*gating*) mediante gráficos bidimensionales y exportación de estadísticas descriptivas. Este enfoque, implementado a través de programas comerciales con interfaces gráficas (*point-and-click*), ha sido el estándar durante décadas para paneles convencionales.
+
+Sin embargo, a medida que los experimentos aumentan en tamaño de muestra y número de marcadores, el análisis tradicional tropieza con tres barreras prácticas:
+
+- **Subjetividad y variabilidad**: El trazado manual de compuertas depende en exceso del criterio visual del operador, dificultando la reproducibilidad exacta entre réplicas, usuarios o laboratorios.
+
+- **Falta de trazabilidad**: Las interfaces gráficas no siempre conservan una bitácora auditable de cada ajuste realizado, lo que complica reconstruir el tratamiento exacto de los datos meses después.
+
+- **Ineficiencia operativa**: Procesar manualmente decenas o cientos de archivos mediante clics repetitivos consume un tiempo valioso y aumenta el riesgo de errores en la exportación de resultados.
+
+Para resolver estas limitaciones, la comunidad científica recurre al lenguaje de programación R y a su ecosistema bioinformático Bioconductor. R proporciona un entorno transparente, auditable y estandarizado para gestionar datos biológicos con total rigor metodológico.
+
+# El entorno de desarrollo: **Positron**
+
+Históricamente, la adopción de R ha estado ligada al uso de RStudio. No obstante, las necesidades actuales de la ciencia de datos exigen herramientas más versátiles y ligeras. Por ello, este libro adopta Positron como su entorno de desarrollo integrado (IDE).
+
+Desarrollado por Posit sobre la arquitectura de Code-OSS, Positron combina la familiaridad y potencia de las consolas de datos (explorador de variables interactivo, visualizador avanzado de gráficos y terminales dinámicas) con una interfaz moderna y ágil. Para el citometrista que escribe sus primeras líneas de código, Positron minimiza la fricción inicial gracias a su asistencia de autocompletado y un entorno intuitivo para inspeccionar tablas y objetos en memoria.
+
+## Estructura y alcance de este volumen
+
+Este primer volumen de R para citometristas está diseñado exclusivamente como un manual de transición y fundamentos. Su meta primordial no es la bioinformática avanzada ni los modelos computacionales complejos, sino dotar al investigador de las bases esenciales para migrar sus datos desde el citómetro hacia el entorno de R, dominando el objeto rey del análisis de datos: la tabla.
+
+El contenido sigue una progresión lógica y accesible para el trabajo de laboratorio:
+
+- **Entorno y primeros pasos en Positron**: Instalación del software, configuración del intérprete de R, navegación por la consola y uso efectivo del panel Variables/Environment para inspeccionar lo que cargamos en memoria.
+
+- **De la matriz FCS al mundo tabular (data.frame y variantes)**: Comprensión de cómo paqueterías como flowCore leen la estructura de un archivo .fcs (metadatos, palabras clave e intensidades) y cómo desmitificar el objeto extrayendo la matriz de eventos celulares para transformarla en estructuras familiares: el data.frame base y sus variantes modernas (tibble y data.table).
+
+- **Manipulación e inspección de datos celulares**: Uso de sintaxis básica y herramientas del ecosistema tidyverse para filtrar filas (eventos celulares), seleccionar columnas (marcadores/fluorocromos), renombrar canales y generar estadísticas descriptivas (medianas de fluorescencia, porcentajes y conteos).
+
+- **Preprocesamiento elemental**: Nociones básicas sobre cómo se representan las transformaciones matemáticas esenciales en R (Logicle, biexponencial o ArcSinh) para preparar las intensidades antes de graficarlas.
+
+- **Visualización gráfica inicial**: Creación de gráficos reproducibles de calidad editorial (histogramas univariados, diagramas de dispersión y densidades) mediante ggplot2, controlando escalas, títulos y estéticas para reportes y presentaciones.
+
+Al concluir este volumen, el lector habrá desmitificado la consola de comandos, comprendiendo con claridad qué es un dato de citometría por dentro y cómo manipularlo cómodamente como una tabla de datos en R. Esta base sólida es el paso previo indispensable para abordar, con total seguridad, volúmenes posteriores dedicados al control de calidad automatizado, el gating algorítmico y las técnicas avanzadas de alta dimensionalidad.

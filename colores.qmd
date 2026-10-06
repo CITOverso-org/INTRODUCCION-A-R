@@ -1,0 +1,41 @@
+fcsfile <- "E:/FCS/24bits.fcs"
+
+myfile <- read.FCS(fcsfile, 
+         transformation = FALSE,
+         emptyValue = TRUE,
+         alter.names = TRUE, # cambia -H a .H
+         column.pattern = NULL,
+         truncate_max_range = FALSE)
+
+keyword(myfile,c("$P1E", "$P2E", "$P3E", "$P4E", "$P5E"))
+
+#with colours indicating density
+colfunc <- colorRampPalette(c("white", 
+                              "lightblue", 
+                              "green", 
+                              "yellow", 
+                              "red"))
+# this colour palette can be changed to your taste
+
+vals <- as.data.frame(exprs(myfile))
+ggplot(vals, aes(x = FSC.A, y = SSC.A)) +
+  ylim(0, 500000) +
+  xlim(0,5000000) +
+  stat_density2d(geom = "tile", aes(fill = ..density..), contour = FALSE) +
+  scale_fill_gradientn(colours = colfunc(400)) + # gives the colour plot
+  geom_density2d(colour = "black", bins = 5) # draws the lines inside
+
+??colfunc
+# there are lots of small pieces of debris. There is a blue cloud of cells too.  
+
+# exclude debris using the filter package
+vals_f <- dplyr::filter(vals, FSC.A>1000000)
+# we still have 25,499 events. 
+
+# repeat the plot
+ggplot(vals_f, aes(x = FSC.A, y = SSC.A)) +
+  ylim(0, 500000) +
+  xlim(0,5000000) +
+  stat_density2d(geom = "tile", aes(fill = ..density..), contour = FALSE) +
+  scale_fill_gradientn(colours = colfunc(0)) + # gives the colour plot
+  geom_density2d(colour = "black", bins = 5) # draws the lines inside

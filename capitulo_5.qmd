@@ -1,0 +1,12 @@
+# CAPÍTULO 5
+
+
+
+
+
+
+---
+
+<div style="text-align: center; margin-top: 3rem; color: #6c757d; font-size: 0.9rem;">
+  Hecho con 💙 por Jairo
+</div>

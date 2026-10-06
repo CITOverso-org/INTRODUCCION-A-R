@@ -1,0 +1,99 @@
+# `data.frame`
+
+Un `data.frame` es la estructura de datos bidimensionales más utilizada en R para análisis y ciencia de datos. Representa una tabla donde:
+
+- Cada **fila** corresponde a una observación o registro.
+
+- Cada **columna** representa una variable.
+
+:::{.fragment}
+```{r}
+#| echo: false
+#| eval: false
+data <- data.frame(File = files,
+                   Path = file.path(dir, files),
+                   Type = stringr::str_match(files, "_([12]).fcs")[, 2],
+                   Batch = stringr::str_match(files, "PTLG[0-9]*")[, 1],
+                   stringsAsFactors = FALSE)
+data$Type <- c("1" = "Train", "2" = "Validation")[data$Type]
+
+print(datos_pacientes)
+```
+:::
+
+## EXPLORACIÓN Y DIAGNÓSTICO
+
+Antes de manipular datos, se verifica su tamaño y estructura.
+
+:::{.fragment}
+```{r}
+
+# dimensiones: filas y columnas
+dim(datos_pacientes)
+
+# Resumen de nombres y tipos de columnas
+str(datos_pacientes)
+
+# Estadísticas descriptivas básicas
+summary(datos_pacientes)
+```
+:::
+
+## ACCESO E INDEXACIÓN
+
+Se pueden seleccionar elementos usando el operador `$` o corchetes `[filas, columnas]`
+
+:::{.fragment}
+```{r}
+
+# Extraer una columna completa como vector
+edades <- datos_pacientes$edad
+
+# Extraer filas 1 a 3 y columnas id y marcador_cd4
+subconjunto <- datos_pacientes[1:3, c("id", "marcador_cd4")]
+print(subconjunto)
+```
+:::
+
+## FILTRADO POR CONDICIONES LÓGICAS
+
+Obtener solo las observaciones que cumplan criterios específicos:
+
+:::{.fragment}
+```{r}
+
+# Pacientes tratados con marcador CD4 mayor a 550
+tratados_altos <- datos_pacientes[
+    datos_pacientes$tratamiento == "Tratado" & datos_pacientes$marcador_cd4 > 550,
+]
+
+print(tratados_altos)
+```
+:::
+
+
+## MODIFICACIÓN Y CREACIÓN DE NUEVAS COLUMNAS
+
+:::{.fragment}
+```{r}
+# Crear una columna con el marcador normalizado (ratio frrente a la media)
+datos_pacientes$ratio_cd4 <- datos_pacientes$marcador_cd4 / mean(datos_pacientes$marcador_cd4)
+
+# Recodificar respondedores a etiquetas descriptivas
+datos_pacientes$estado <- ifelse(datos_pacientes$respondedor, "Positivo", "Negativo")
+
+# Ver el resultado final con las nuevas columnas
+print(datos_pacientes)
+```
+:::
+
+## RESUMEN DE SINTAXIS ESENCIAL
+
+| Operación | Sintaxis en R base | Propósito |
+|-----------|--------------------|-----------|
+| Acceso a columna | `df$nombre_col` | `Devuelve la columna como vector` |
+| Filtrado de filas | `df[df$condicion, ]` | Conserva las filas donde la condición es `TRUE` |
+| Selección de columnas | df[ , c("col1", "col2")] | Extrae solo las columnas especificadas |
+| Agregar columna | `df$nueva_col <- valores` | Añade una variable calculada |
+| Comprobar estructura | `str(df)` | Muestra clases y primeros valores de cada columna |
+: Resumen de sintaxis esencial

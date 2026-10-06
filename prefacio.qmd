@@ -1,0 +1,19 @@
+# Prefacio {.unnumbered}
+
+La citometría de flujo genera hoy más datos y parámetros que nunca. Aunque las interfaces gráficas comerciales son el punto de partida habitual en el laboratorio, dependen de clics repetitivos, limitan la automatización y dificultan documentar con exactitud cada paso del análisis.
+
+Para estudiantes e investigadores en ciencias biomédicas, aprender a manejar estos datos mediante código ya no es un lujo técnico, sino una herramienta de trabajo diario. R y el ecosistema Bioconductor ofrecen el entorno estándar para lograrlo: análisis transparentes, reproducibles y adaptados a las necesidades reales del citometrista.
+
+Este libro, R para citometristas: Guía introductoria, está concebido como una primera aproximación accesible y directa al lenguaje R. No requiere conocimientos previos de programación ni pretende formar expertos en ciencias de la computación. Su objetivo es brindar los fundamentos esenciales para dar los primeros pasos en la consola con confianza y aplicarlos de inmediato a los datos del citómetro.
+
+A lo largo de sus páginas, el lector aprenderá las bases operativas del análisis digital:
+
+- **Primeros pasos en R y RStudio**: Instalación del entorno, conceptos básicos de sintaxis y manejo de las estructuras de datos fundamentales para quien proviene del trabajo de mesada.
+
+- **Estructuración y manipulación de datos**: Lectura de archivos .fcs con paqueterías especializadas de Bioconductor, aprendiendo a transformar las matrices de citometría en estructuras tabulares (data.frame, tibble). Este paso permite al lector familiarizarse con el formato universal de R para ordenar eventos, renombrar marcadores y preparar tablas de resumen.
+
+- **Reproducibilidad en el laboratorio**: Cómo estructurar scripts claros y ordenados que funcionen como una bitácora digital exacta, asegurando que un análisis pueda replicarse paso a paso sin depender de la memoria o de capturas de pantalla.
+
+- **Visualización inicial**: Generación de gráficos claros y personalizables (histogramas, diagramas de puntos y densidades) listos para reportes de laboratorio o presentaciones de seminario.
+
+Aprender código por primera vez implica una pequeña curva de adaptación, pero los beneficios en tiempo, orden y rigor metodológico son inmediatos. Este texto ofrece una puerta de entrada guiada, libre de tecnicismos innecesarios, para transformar la consola de R en una extensión natural del citómetro.

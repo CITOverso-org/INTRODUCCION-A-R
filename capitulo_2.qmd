@@ -1,0 +1,35 @@
+# **PAQUETES**
+
+## Paquetes de R
+
+Un **paquete** de R es un conjunto estandarizado de funciones, código, datos y documentación que amplía las capacidades base del lenguaje. En el ámbito de la citometría de flujo, un paquete funciona como una caja de herramientas especializada que traduce algoritmos complejos y operaciones estadísticas en comandos sencillos, permitiendo procesar millones de eventos celulares sin tener que programar cada procedimiento desde cero.
+
+## Paquetes en citometría de flujo
+
+La citometría de flujo genera archivos complejos (.fcs) con datos multidimensionales difíciles de manejar con software tradicional. Los paquetes especializados están diseñados para cubrir cada etapa del flujo de trabajo analítico:
+
+- **Lectura e importación**: Permiten cargar archivos .fcs y estructurar los datos en matrices organizadas dentro de R.
+
+- **Preprocesamiento**: Facilitan la compensación de fluorescencia (corrección de la superposición espectral entre fluoróforos) y las transformaciones matemáticas de los ejes.
+
+- **Identificación celular (*gating*)**: Ofrecen herramientas para delimitar poblaciones celulares de forma manual, reproducible o mediante algoritmos automatizados.
+
+- **Visualización avanzada**: Generan gráficos de dispersión, mapas de calor y proyecciones de alta dimensión (como t-SNE o UMAP).
+
+Ejemplos esenciales de paquetes citométricos
+
+- **flowCore**: Es la columna vertebral del ecosistema; define las clases de datos básicas (como **flowFrame**) para manipular la información cruda.
+
+- **flowViz**: Se centra en la representación gráfica, permitiendo crear histogramas y diagramas de contorno adaptados a la citometría.
+
+- **openCyto**: Automatiza el proceso de gating para estandarizar la compuerta analítica en grandes estudios clínicos.
+
+**En resumen**: Los paquetes actúan como el puente indispensable que transforma los datos crudos del citómetro en descubrimientos biológicos interpretables.
+
+# ACTIVIDADES DE APRENDIZAJE
+
+---
+
+<div style="text-align: center; margin-top: 3rem; color: #6c757d; font-size: 0.9rem;">
+  Hecho con 💙 por Jairo
+</div>
