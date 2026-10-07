@@ -1,6 +1,6 @@
 # Prefacio {.unnumbered}
 
-Durante décadas, la citometría de flujo se ha consolidado como una de las herramientas más determinantes de la investigación biomédica, permitiendo caracterizar la heterogeneidad celular con resolución de célula única. Sin embargo, la rutina diaria frente al citómetro ha estado tradicionalmente ligada a un flujo de trabajo manual: adquirir las muestras, realizar compensaciones visuales, delimitar poblaciones mediante compuertas en gráficos bidimensionales (*point-and-click*) y copiar manualmente tablas de resultados a hojas de cálculo.
+Durante décadas, la citometría de flujo se ha consolidado como una de las herramientas más determinantes de la investigación biomédica, permitiendo caracterizar la heterogeneidad celular con resolución de célula única. Sin embargo, la rutina diaria frente al citómetro ha estado tradicionalmente ligada a un flujo de trabajo manual: adquirir las muestras, realizar compensaciones visuales, delimitar poblaciones mediante *gates* en gráficos bidimensionales (*point-and-click*) y copiar manualmente tablas de resultados a hojas de cálculo.
 
 Este enfoque, aunque familiar y accesible en los inicios de cualquier investigador, enfrenta barreras evidentes en el laboratorio contemporáneo. Conforme los experimentos aumentan en número de marcadores, muestras y réplicas, el análisis tradicional tropieza con tres obstáculos fundamentales:
 
