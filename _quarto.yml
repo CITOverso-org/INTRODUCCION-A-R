@@ -3,7 +3,7 @@ project:
 
 book:
   title: "DEL CITÓMETRO A LA CONSOLA"
-  subtitle: "Fundamentos de R para el manejo de datos" 
+  subtitle: "Fundamentos de R para el manejo de datos de citometría" 
   author: "Jairo Ricardo Villanueva-Toledo"
   date: today
   chapters:

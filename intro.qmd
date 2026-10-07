@@ -1,28 +1,22 @@
 # Introducción {.unnumbered}
 
-La citometría de flujo es una de las tecnologías pilares de la investigación biomédica contemporánea, fundamental para la caracterización fenotípica y funcional de poblaciones celulares a resolución de célula única. Desde su concepción, la disciplina ha operado bajo un flujo de trabajo lineal bien establecido: adquisición de la muestra, compensación, delimitación manual de poblaciones (*gating*) mediante gráficos bidimensionales y exportación de estadísticas descriptivas. Este enfoque, implementado a través de programas comerciales con interfaces gráficas (*point-and-click*), ha sido el estándar durante décadas para paneles convencionales.
+## El cambio de paradigma: Del software cerrado al código abierto
 
-Sin embargo, a medida que los experimentos aumentan en tamaño de muestra y número de marcadores, el análisis tradicional tropieza con tres barreras prácticas:
+Aprender R en citometría no implica abandonar el criterio biológico; al contrario, significa dotarlo de rigor metodológico. La adopción de código convierte cada análisis en una bitácora científica explícita, auditable y automatizable, donde cada transformación y cálculo queda registrado de principio a fin.
 
-- **Subjetividad y variabilidad**: El trazado manual de compuertas depende en exceso del criterio visual del operador, dificultando la reproducibilidad exacta entre réplicas, usuarios o laboratorios.
+El ecosistema de R permite conectar directamente los archivos crudos de adquisición con tablas procesadas y figuras listas para publicación, garantizando que cualquier experimento pueda reanalizarse exactamente bajo las mismas condiciones.
 
-- **Falta de trazabilidad**: Las interfaces gráficas no siempre conservan una bitácora auditable de cada ajuste realizado, lo que complica reconstruir el tratamiento exacto de los datos meses después.
+## El entorno de trabajo: Positron
 
-- **Ineficiencia operativa**: Procesar manualmente decenas o cientos de archivos mediante clics repetitivos consume un tiempo valioso y aumenta el riesgo de errores en la exportación de resultados.
+La adopción de R estuvo históricamente centrada en RStudio. No obstante, las necesidades actuales de la ciencia de datos han impulsado entornos más ágiles y modernos. Este libro adopta Positron como el entorno de desarrollo integrado (IDE) de referencia.
 
-Para resolver estas limitaciones, la comunidad científica recurre al lenguaje de programación R y a su ecosistema bioinformático Bioconductor. R proporciona un entorno transparente, auditable y estandarizado para gestionar datos biológicos con total rigor metodológico.
-
-# El entorno de desarrollo: **Positron**
-
-Históricamente, la adopción de R ha estado ligada al uso de RStudio. No obstante, las necesidades actuales de la ciencia de datos exigen herramientas más versátiles y ligeras. Por ello, este libro adopta Positron como su entorno de desarrollo integrado (IDE).
-
-Desarrollado por Posit sobre la arquitectura de Code-OSS, Positron combina la familiaridad y potencia de las consolas de datos (explorador de variables interactivo, visualizador avanzado de gráficos y terminales dinámicas) con una interfaz moderna y ágil. Para el citometrista que escribe sus primeras líneas de código, Positron minimiza la fricción inicial gracias a su asistencia de autocompletado y un entorno intuitivo para inspeccionar tablas y objetos en memoria.
+Diseñado por Posit sobre la arquitectura Code-OSS, Positron combina la potencia de un editor ligero con herramientas esenciales para el análisis biológico: consolas interactivas, visores directos de gráficos y un panel de inspección de variables optimizado. Para quien escribe código por primera vez, Positron reduce sustancialmente la curva de entrada, permitiendo explorar estructuras tabulares y matrices celulares de forma visual e intuitiva.
 
 ## Estructura y alcance de este volumen
 
-Este primer volumen de R para citometristas está diseñado exclusivamente como un manual de transición y fundamentos. Su meta primordial no es la bioinformática avanzada ni los modelos computacionales complejos, sino dotar al investigador de las bases esenciales para migrar sus datos desde el citómetro hacia el entorno de R, dominando el objeto rey del análisis de datos: la tabla.
+Este volumen introductorio se enfoca en los pilares mecánicos y conceptuales necesarios para importar, examinar y transformar datos citométricos sin recurrir a paquetes herméticos de caja negra. El eje central de la obra radica en desmitificar el archivo .fcs y dominar la estructura universal de datos en R: el data.frame y sus variantes modernas.
 
-El contenido sigue una progresión lógica y accesible para el trabajo de laboratorio:
+El contenido se articula en cuatro bloques progresivos:
 
 - **Entorno y primeros pasos en Positron**: Instalación del software, configuración del intérprete de R, navegación por la consola y uso efectivo del panel Variables/Environment para inspeccionar lo que cargamos en memoria.
 
@@ -30,8 +24,6 @@ El contenido sigue una progresión lógica y accesible para el trabajo de labora
 
 - **Manipulación e inspección de datos celulares**: Uso de sintaxis básica y herramientas del ecosistema tidyverse para filtrar filas (eventos celulares), seleccionar columnas (marcadores/fluorocromos), renombrar canales y generar estadísticas descriptivas (medianas de fluorescencia, porcentajes y conteos).
 
-- **Preprocesamiento elemental**: Nociones básicas sobre cómo se representan las transformaciones matemáticas esenciales en R (Logicle, biexponencial o ArcSinh) para preparar las intensidades antes de graficarlas.
-
 - **Visualización gráfica inicial**: Creación de gráficos reproducibles de calidad editorial (histogramas univariados, diagramas de dispersión y densidades) mediante ggplot2, controlando escalas, títulos y estéticas para reportes y presentaciones.
 
-Al concluir este volumen, el lector habrá desmitificado la consola de comandos, comprendiendo con claridad qué es un dato de citometría por dentro y cómo manipularlo cómodamente como una tabla de datos en R. Esta base sólida es el paso previo indispensable para abordar, con total seguridad, volúmenes posteriores dedicados al control de calidad automatizado, el gating algorítmico y las técnicas avanzadas de alta dimensionalidad.
+Al concluir este volumen, el lector habrá sustituido la dependencia de herramientas cerradas por un flujo de trabajo transparente y reproducible, estableciendo las bases requeridas para abordar análisis avanzados en volúmenes posteriores.

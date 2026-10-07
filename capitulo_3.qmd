@@ -1,4 +1,4 @@
-# **REPOSITORIOS**
+# REPOSITORIOS
 
 ## Repositorio de paquetes de R
 

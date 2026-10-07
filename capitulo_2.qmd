@@ -1,4 +1,4 @@
-# **PAQUETES**
+# PAQUETES
 
 ## Paquetes de R
 
