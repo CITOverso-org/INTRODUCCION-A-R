@@ -215,7 +215,11 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#por-qué-usar-r-en-lugar-de-software-manual" id="toc-por-qué-usar-r-en-lugar-de-software-manual" class="nav-link active" data-scroll-target="#por-qué-usar-r-en-lugar-de-software-manual"><span class="header-section-number">1.1</span> ¿<strong>Por qué usar R en lugar de software manual</strong>?</a></li>
-  <li><a href="#positron" id="toc-positron" class="nav-link" data-scroll-target="#positron"><span class="header-section-number">2</span> POSITRON</a></li>
+  <li><a href="#positron" id="toc-positron" class="nav-link" data-scroll-target="#positron"><span class="header-section-number">2</span> POSITRON</a>
+  <ul class="collapse">
+  <li><a href="#arquitectura-moderna-en-ciencia-de-datos" id="toc-arquitectura-moderna-en-ciencia-de-datos" class="nav-link" data-scroll-target="#arquitectura-moderna-en-ciencia-de-datos"><span class="header-section-number">2.1</span> Arquitectura moderna en ciencia de datos</a></li>
+  <li><a href="#anatomía-del-entorno-de-trabajo-en-positron" id="toc-anatomía-del-entorno-de-trabajo-en-positron" class="nav-link" data-scroll-target="#anatomía-del-entorno-de-trabajo-en-positron"><span class="header-section-number">2.2</span> Anatomía del entorno de trabajo en Positron</a></li>
+  </ul></li>
   <li><a href="#actividades-de-aprendizaje" id="toc-actividades-de-aprendizaje" class="nav-link" data-scroll-target="#actividades-de-aprendizaje"><span class="header-section-number">3</span> ACTIVIDADES DE APRENDIZAJE</a></li>
   </ul>
 </nav>
@@ -271,13 +275,34 @@ Nota
 </section>
 <section id="positron" class="level1" data-number="2">
 <h1 data-number="2"><span class="header-section-number">2</span> POSITRON</h1>
-<p><a href="https://positron.posit.co/">Positron</a> es el entorno de desarrollo integrado (IDE) de última generación creado por Posit (la empresa detrás de RStudio). Está construido sobre el núcleo de código abierto de Code - OSS (la misma base técnica de Visual Studio Code), pero diseñado específicamente como un espacio de trabajo para la ciencia de datos en R y Python.</p>
-<p>A diferencia de VS Code estándar —que requiere configurar múltiples extensiones— o del RStudio clásico —que fue pensado originalmente casi en exclusiva para R—, Positron viene preconfigurado con una arquitectura moderna que potencia enormemente el análisis bioinformático y la citometría de flujo.</p>
+<p>El análisis de datos masivos provenientes de la citometría de flujo requiere no solo de algoritmos robustos, sino de una infraestructura de software que optimice el flujo de trabajo del científico. Aunque históricamente RStudio ha sido el estándar de oro para la comunidad de R, el panorama tecnológico actual exige herramientas más versátiles, veloces y capaces de integrar flujos de trabajo políglotas. Aquí es donde surge Positron.</p>
+<p><a href="https://positron.posit.co/">Positron</a> es un entorno de desarrollo integrado (IDE) gratuito y de última generación diseñado específicamente para la ciencia de datos. Desarrollado por <a href="https://posit.co/">Posit</a>, este entorno representa la evolución natural de las herramientas de programación científica, facilitando un trabajo fluido y nativo tanto en R como en Python.</p>
+<section id="arquitectura-moderna-en-ciencia-de-datos" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="arquitectura-moderna-en-ciencia-de-datos"><span class="header-section-number">2.1</span> Arquitectura moderna en ciencia de datos</h2>
+<p>A diferencia de otros editores genéricos, Positron no nace desde cero, sino que combina de manera fluida lo mejor de dos mundos. Por un lado, al haber sido construido como una rama de <em>Visual Studio Code</em>, hereda de inmediato la potencia de su arquitectura: una interfaz de codificación ultramoderna, un rendimiento de memoria excepcionalmente veloz y acceso a un ecosistema masivo de extensiones y personalización avanzada. Por el otro, el equipo de Posit ha inyectado en esta estructura toda la experiencia acumulada durante más de una década creando y manteniendo RStudio. El resultado no es un simple editor de texto general al que se le añaden complementos, sino un entorno diseñado desde su núcleo por y para científicos de datos.</p>
+<p>Al trabajar en la automatización de los análisis citométricos, Positron ofrece funciones críticas orientadas a mejorar la reproducibilidad y la velocidad de ejecución:</p>
 <ul>
-<li><p><strong>ADN moderno y abierto</strong>: Está construido sobre estándares abiertos (utilizando como base Code OSS, la misma plataforma tecnológica de Visual Studio Code), lo que permite aprovechar extensiones y una interfaz altamente personalizable.</p></li>
-<li><p><strong>Enfoque multi-lenguaje (Políglota)</strong>: A diferencia de RStudio (enfocado principalmente en R), Positron soporta de forma nativa y simultánea tanto R como Python, permitiendo trabajar con ambos lenguajes en un mismo proyecto sin fricciones.</p></li>
-<li><p><strong>Herramientas interactivas integradas</strong>: Combina la comodidad de una interfaz orientada a datos (como un visor avanzado de dataframes, un panel dedicado a gráficos interactivos y un inspector de variables muy potente) con la flexibilidad de un editor de código moderno.</p></li>
+<li><p><strong>Explorador de Datos Integrado</strong>: Permite inspeccionar <em>data frames</em>, matrices y estructuras complejas de manera visual y de alto rendimiento, ideal para verificar las dimensiones de las matrices de expresión celular o metadatos de archivos FCS.</p></li>
+<li><p><strong>Gestión Inteligente de Intérpretes</strong>: Permite cambiar entre diferentes versiones de R o entornos virtuales de Python con un solo clic, garantizando que los proyectos de Bioconductor utilicen siempre las dependencias correctas.</p></li>
+<li><p><strong>Asistencia de IA Nativa</strong>: Ayuda a depurar <em>scripts</em>, optimizar <em>bucles</em> de análisis o autocompletar código de gráficos complejos rápidamente.</p></li>
 </ul>
+</section>
+<section id="anatomía-del-entorno-de-trabajo-en-positron" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="anatomía-del-entorno-de-trabajo-en-positron"><span class="header-section-number">2.2</span> Anatomía del entorno de trabajo en Positron</h2>
+<p>La interfaz de Positron ha sido meticulosamente estructurada para maximizar la eficiencia en el análisis de datos. Si se viene de entornos tradicionales como RStudio o VS Code, se notará un diseño familiar pero profundamente optimizado para flujos de trabajo científicos.</p>
+<p>Los componentes principales que gobiernan este IDE se dividen en cinco zonas (<a href="#fig-1">Figura 1</a>) clave:</p>
+<ul>
+<li><p><strong>Barra de Actividad</strong> (<strong><em>Activity Bar</em></strong>): Ubicada habitualmente en el extremo lateral, funciona como el centro de control global del IDE. Proporciona acceso inmediato a módulos esenciales como el Explorador de archivos, el motor de Búsqueda indexada, el sistema de Control de Versiones (Git), la gestión de Extensiones y las configuraciones del sistema.</p></li>
+<li><p><strong>Barra Lateral Principal</strong> (<strong><em>Primary Side Bar</em></strong>): Este panel dinámico muta su contenido según el módulo activo en la Barra de Actividad. Por ejemplo, al activar la vista de gestión de archivos, se despliega aquí un árbol de directorios interactivo para navegar por las carpetas del proyecto.</p></li>
+<li><p><strong>Editor de Código</strong> (<strong><em>Editor</em></strong>): El núcleo operativo de la interfaz. Es el área de alta velocidad destinada a la escritura de scripts de R, archivos Quarto (<code>.qmd</code>) o código Python, equipado con autocompletado inteligente, resaltado de sintaxis y asistencia en tiempo real.</p></li>
+<li><p><strong>Panel Central Inferior</strong> (<strong><em>Console &amp; Terminal</em></strong>): La zona de ejecución interactiva. Aloja las consolas nativas de programación (donde se interpretan y devuelven los comandos de R o Python de forma inmediata) y la Terminal del sistema operativo para tareas de administración del entorno.</p></li>
+<li><p><strong>Barra Lateral Secundaria</strong> (<strong><em>Secondary Side Bar</em></strong>): La innovación analítica de Positron. Este panel está dedicado exclusivamente a la inspección de la ciencia de datos en ejecución: aquí se auditan las variables cargadas en el entorno (<strong><em>Environment</em></strong>), se previsualizan los gráficos generados, se consulta la documentación técnica de las funciones y se interactúa con el Explorador de Datos integrado.</p></li>
+</ul>
+<div style="text-align: center;">
+<p><a id="fig-1"></a> <img src="imagenes/positron2.png" class="img-fluid"></p>
+<p><strong>Figura 1</strong>. Entorno de trabajo Positron</p>
+</div>
+</section>
 </section>
 <section id="actividades-de-aprendizaje" class="level1" data-number="3">
 <h1 data-number="3"><span class="header-section-number">3</span> ACTIVIDADES DE APRENDIZAJE</h1>
