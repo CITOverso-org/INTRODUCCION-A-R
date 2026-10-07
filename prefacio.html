@@ -158,13 +158,13 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./capitulo_2.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title"><strong>PAQUETES</strong></span></span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">PAQUETES</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./capitulo_3.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title"><strong>REPOSITORIOS</strong></span></span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">REPOSITORIOS</span></span></a>
   </div>
 </li>
       </ul>
@@ -234,17 +234,15 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>La citometría de flujo genera hoy más datos y parámetros que nunca. Aunque las interfaces gráficas comerciales son el punto de partida habitual en el laboratorio, dependen de clics repetitivos, limitan la automatización y dificultan documentar con exactitud cada paso del análisis.</p>
-<p>Para estudiantes e investigadores en ciencias biomédicas, aprender a manejar estos datos mediante código ya no es un lujo técnico, sino una herramienta de trabajo diario. R y el ecosistema Bioconductor ofrecen el entorno estándar para lograrlo: análisis transparentes, reproducibles y adaptados a las necesidades reales del citometrista.</p>
-<p>Este libro, R para citometristas: Guía introductoria, está concebido como una primera aproximación accesible y directa al lenguaje R. No requiere conocimientos previos de programación ni pretende formar expertos en ciencias de la computación. Su objetivo es brindar los fundamentos esenciales para dar los primeros pasos en la consola con confianza y aplicarlos de inmediato a los datos del citómetro.</p>
-<p>A lo largo de sus páginas, el lector aprenderá las bases operativas del análisis digital:</p>
+<p>Durante décadas, la citometría de flujo se ha consolidado como una de las herramientas más determinantes de la investigación biomédica, permitiendo caracterizar la heterogeneidad celular con resolución de célula única. Sin embargo, la rutina diaria frente al citómetro ha estado tradicionalmente ligada a un flujo de trabajo manual: adquirir las muestras, realizar compensaciones visuales, delimitar poblaciones mediante compuertas en gráficos bidimensionales (<em>point-and-click</em>) y copiar manualmente tablas de resultados a hojas de cálculo.</p>
+<p>Este enfoque, aunque familiar y accesible en los inicios de cualquier investigador, enfrenta barreras evidentes en el laboratorio contemporáneo. Conforme los experimentos aumentan en número de marcadores, muestras y réplicas, el análisis tradicional tropieza con tres obstáculos fundamentales:</p>
 <ul>
-<li><p><strong>Primeros pasos en R y RStudio</strong>: Instalación del entorno, conceptos básicos de sintaxis y manejo de las estructuras de datos fundamentales para quien proviene del trabajo de mesada.</p></li>
-<li><p><strong>Estructuración y manipulación de datos</strong>: Lectura de archivos .fcs con paqueterías especializadas de Bioconductor, aprendiendo a transformar las matrices de citometría en estructuras tabulares (data.frame, tibble). Este paso permite al lector familiarizarse con el formato universal de R para ordenar eventos, renombrar marcadores y preparar tablas de resumen.</p></li>
-<li><p><strong>Reproducibilidad en el laboratorio</strong>: Cómo estructurar scripts claros y ordenados que funcionen como una bitácora digital exacta, asegurando que un análisis pueda replicarse paso a paso sin depender de la memoria o de capturas de pantalla.</p></li>
-<li><p><strong>Visualización inicial</strong>: Generación de gráficos claros y personalizables (histogramas, diagramas de puntos y densidades) listos para reportes de laboratorio o presentaciones de seminario.</p></li>
+<li><p><strong>Subjetividad metodológica</strong>: El trazado manual de compuertas introduce variabilidad atribuible al operador, lo que dificulta la reproducibilidad exacta de los resultados a lo largo del tiempo o entre distintos miembros de un equipo.</p></li>
+<li><p><strong>Falta de trazabilidad</strong>: Las interfaces comerciales no siempre generan un registro auditable e inmutable de las operaciones realizadas, complicando la reconstrucción minuciosa del tratamiento de los datos.</p></li>
+<li><p><strong>Ineficiencia en el escalamiento</strong>: Repetir secuencias idénticas de clics para decenas o cientos de archivos consume tiempo valioso de mesada y multiplica las probabilidades de cometer errores de transcripción.</p></li>
 </ul>
-<p>Aprender código por primera vez implica una pequeña curva de adaptación, pero los beneficios en tiempo, orden y rigor metodológico son inmediatos. Este texto ofrece una puerta de entrada guiada, libre de tecnicismos innecesarios, para transformar la consola de R en una extensión natural del citómetro.</p>
+<p>Ante este panorama, la programación estadística mediante R y su repositorio especializado Bioconductor se ha posicionado como el estándar metodológico para procesar y reportar datos citométricos. No obstante, para quien proviene de la formación experimental, la transición a la programación suele percibirse como un abismo lleno de jerga computacional innecesaria.</p>
+<p><strong>Del citómetro a la consola: Fundamentos de R para el manejo de datos de citometría</strong> nace para derribar esa barrera. Este texto no pretende formar desarrolladores de software ni teóricos de la bioinformática; su único propósito es servir de puente entre el trabajo en la mesa de trabajo y la línea de comandos, dotando al investigador de autonomía analítica, orden y reproducibilidad desde su primera sesión de trabajo.</p>
 
 
 
