@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es"><head>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.9.37">
@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>2&nbsp; PAQUETES – DEL CITÓMETRO A LA CONSOLA</title>
+<title>extra</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -23,257 +23,85 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./capitulo_3.html" rel="next">
-<link href="./capitulo_1.html" rel="prev">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-2b91fda96fc4217d309e4768f8eb8023.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-33feae038da839d9b6362b252b3d766a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
-<script id="quarto-search-options" type="application/json">{
-  "location": "sidebar",
-  "copy-button": false,
-  "collapse-after": 3,
-  "panel-placement": "start",
-  "type": "textbox",
-  "limit": 50,
-  "keyboard-shortcut": [
-    "f",
-    "/",
-    "s"
-  ],
-  "show-item-context": false,
-  "language": {
-    "search-no-results-text": "No se han encontrado resultados",
-    "search-matching-documents-text": "documentos encontrados",
-    "search-copy-link-title": "Copiar el enlace en la búsqueda",
-    "search-hide-matches-text": "Ocultar resultados adicionales",
-    "search-more-match-text": "resultado adicional en este documento",
-    "search-more-matches-text": "resultados adicionales en este documento",
-    "search-clear-button-title": "Borrar",
-    "search-text-placeholder": "",
-    "search-detached-cancel-button-title": "Cancelar",
-    "search-submit-button-title": "Enviar",
-    "search-label": "Buscar"
-  }
-}</script>
+<script src="extra_files/libs/clipboard/clipboard.min.js"></script>
+<script src="extra_files/libs/quarto-html/quarto.js" type="module"></script>
+<script src="extra_files/libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="extra_files/libs/quarto-html/popper.min.js"></script>
+<script src="extra_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="extra_files/libs/quarto-html/anchor.min.js"></script>
+<link href="extra_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="extra_files/libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="extra_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="extra_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="extra_files/libs/bootstrap/bootstrap-efbb37e9afcc02144ebbc7afd12a776f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 
 
 </head>
 
-<body class="nav-sidebar floating quarto-light">
+<body class="fullcontent quarto-light">
 
-<div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
-  <nav class="quarto-secondary-nav">
-    <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-        <i class="bi bi-layout-text-sidebar-reverse"></i>
-      </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./capitulo_1.html">I. EL ENTORNO</a></li><li class="breadcrumb-item"><a href="./capitulo_2.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">PAQUETES</span></a></li></ol></nav>
-        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-        </a>
-      <button type="button" class="btn quarto-search-button" aria-label="Buscar" onclick="window.quartoOpenSearch();">
-        <i class="bi bi-search"></i>
-      </button>
-    </div>
-  </nav>
-</header>
-<!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
-<!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
-    <div class="pt-lg-2 mt-2 text-left sidebar-header">
-    <div class="sidebar-title mb-0 py-0">
-      <a href="./">DEL CITÓMETRO A LA CONSOLA</a> 
-    </div>
-      </div>
-        <div class="mt-2 flex-shrink-0 align-items-center">
-        <div class="sidebar-search">
-        <div id="quarto-search" class="" title="Buscar"></div>
-        </div>
-        </div>
-    <div class="sidebar-menu-container"> 
-    <ul class="list-unstyled mt-1">
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Portada</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./licencia.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Licencia</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./prefacio.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Prefacio</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./intro.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Introducción</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./Autor.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Acerca del Autor</span></a>
-  </div>
-</li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
- <span class="menu-text">I. EL ENTORNO</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Alternar sección">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./capitulo_1.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">R &amp; LA IDE</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./capitulo_2.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">PAQUETES</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./capitulo_3.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">REPOSITORIOS</span></span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
- <span class="menu-text">II. FORMATO DE TABLAS</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Alternar sección">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./capitulo_4.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">ACTIVIDADES DE APRENDIZAJE</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./capitulo_5.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">CAPÍTULO 5</span></span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./summary.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Síntesis</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./references.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Referencias</span></a>
-  </div>
-</li>
-    </ul>
-    </div>
-</nav>
-<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
-<!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Tabla de contenidos</h2>
-   
-  <ul>
-  <li><a href="#paquetes-de-r" id="toc-paquetes-de-r" class="nav-link active" data-scroll-target="#paquetes-de-r"><span class="header-section-number">2.1</span> Paquetes de R</a></li>
-  <li><a href="#paquetes-en-citometría-de-flujo" id="toc-paquetes-en-citometría-de-flujo" class="nav-link" data-scroll-target="#paquetes-en-citometría-de-flujo"><span class="header-section-number">2.2</span> Paquetes en citometría de flujo</a></li>
-  <li><a href="#actividades-de-aprendizaje" id="toc-actividades-de-aprendizaje" class="nav-link" data-scroll-target="#actividades-de-aprendizaje"><span class="header-section-number">3</span> ACTIVIDADES DE APRENDIZAJE</a></li>
-  </ul>
-</nav>
-    </div>
-<!-- main -->
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./capitulo_1.html">I. EL ENTORNO</a></li><li class="breadcrumb-item"><a href="./capitulo_2.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">PAQUETES</span></a></li></ol></nav>
-<div class="quarto-title">
-<h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">PAQUETES</span></h1>
+
+
+
+<p>En R, hay una diferencia clara entre un <strong>Error</strong> (que detiene el proceso y hace que falle) y un <strong>Warning message</strong> (una simple advertencia informativa).</p>
+<p>¿Qué significa cada mensaje? <code>The downloaded source packages are in ...\downloaded_packages</code></p>
+<p>Este es un mensaje rutinario de confirmación. Significa que R descargó con éxito los archivos de instalación y los guardó en tu carpeta temporal para procesarlos.</p>
+<p><code>Warning messages: ... Some listed binary packages have no source</code></p>
+<p>Ocurre cuando R consulta los servidores de repositorios (CRAN o Bioconductor) y detecta que para algunos paquetes existe el binario precompilado para Windows, pero el servidor no tiene publicado el código fuente (<em>source</em>) exacto en ese mismo índice, o viceversa.</p>
+<p><strong>Impacto</strong>: Ninguno para el uso habitual. R simplemente instaló la versión binaria precompilada (que además es la recomendada en Windows para no tener que compilar herramientas en C/C++).</p>
+<p>Cómo comprobar que el paquete quedó bien instalado Para confirmar que el paquete se instaló correctamente y está listo para usarse, cárgalo en tu consola de R con:</p>
+<div class="fragment">
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(PeacoQC)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-
-
-
-<div class="quarto-title-meta">
-
-    
-  
-    
-  </div>
-  
-
-
-</header>
-
-
-<section id="paquetes-de-r" class="level2" data-number="2.1">
-<h2 data-number="2.1" class="anchored" data-anchor-id="paquetes-de-r"><span class="header-section-number">2.1</span> Paquetes de R</h2>
-<p>Un <strong>paquete</strong> de R es un conjunto estandarizado de funciones, código, datos y documentación que amplía las capacidades base del lenguaje. En el ámbito de la citometría de flujo, un paquete funciona como una caja de herramientas especializada que traduce algoritmos complejos y operaciones estadísticas en comandos sencillos, permitiendo procesar millones de eventos celulares sin tener que programar cada procedimiento desde cero.</p>
-</section>
-<section id="paquetes-en-citometría-de-flujo" class="level2" data-number="2.2">
-<h2 data-number="2.2" class="anchored" data-anchor-id="paquetes-en-citometría-de-flujo"><span class="header-section-number">2.2</span> Paquetes en citometría de flujo</h2>
-<p>La citometría de flujo genera archivos complejos (.fcs) con datos multidimensionales difíciles de manejar con software tradicional. Los paquetes especializados están diseñados para cubrir cada etapa del flujo de trabajo analítico:</p>
-<ul>
-<li><p><strong>Lectura e importación</strong>: Permiten cargar archivos .fcs y estructurar los datos en matrices organizadas dentro de R.</p></li>
-<li><p><strong>Preprocesamiento</strong>: Facilitan la compensación de fluorescencia (corrección de la superposición espectral entre fluoróforos) y las transformaciones matemáticas de los ejes.</p></li>
-<li><p><strong>Identificación celular (<em>gating</em>)</strong>: Ofrecen herramientas para delimitar poblaciones celulares de forma manual, reproducible o mediante algoritmos automatizados.</p></li>
-<li><p><strong>Visualización avanzada</strong>: Generan gráficos de dispersión, mapas de calor y proyecciones de alta dimensión (como t-SNE o UMAP).</p></li>
-</ul>
-<p>Ejemplos esenciales de paquetes citométricos</p>
-<ul>
-<li><p><strong>flowCore</strong>: Es la columna vertebral del ecosistema; define las clases de datos básicas (como <strong>flowFrame</strong>) para manipular la información cruda.</p></li>
-<li><p><strong>flowViz</strong>: Se centra en la representación gráfica, permitiendo crear histogramas y diagramas de contorno adaptados a la citometría.</p></li>
-<li><p><strong>openCyto</strong>: Automatiza el proceso de gating para estandarizar la compuerta analítica en grandes estudios clínicos.</p></li>
-</ul>
-<p><strong>En resumen</strong>: Los paquetes actúan como el puente indispensable que transforma los datos crudos del citómetro en descubrimientos biológicos interpretables.</p>
-</section>
-<section id="actividades-de-aprendizaje" class="level1" data-number="3">
-<h1 data-number="3"><span class="header-section-number">3</span> ACTIVIDADES DE APRENDIZAJE</h1>
-<hr>
-<div style="text-align: center; margin-top: 3rem; color: #6c757d; font-size: 0.9rem;">
-<p>Hecho con 💙 por Jairo</p>
 </div>
+<p>Si no sale ningún mensaje de error en rojo (o solo salen mensajes de bienvenida/carga), el paquete está instalado correctamente.</p>
+<p>Si aparece: <code>Error in library(...) : there is no package called...</code>, entonces la instalación no se completó y requerirá reinstalarse.</p>
 
-
-</section>
-
-</main> <!-- /main -->
+</main>
+<!-- /main column -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
@@ -299,12 +127,12 @@ ul.task-list li input[type="checkbox"] {
       // flash "checked"
       button.classList.add('code-copy-button-checked');
       var currentTitle = button.getAttribute("title");
-      button.setAttribute("title", "Copiado");
+      button.setAttribute("title", "Copied!");
       let tooltip;
       if (window.bootstrap) {
         button.setAttribute("data-bs-toggle", "tooltip");
         button.setAttribute("data-bs-placement", "left");
-        button.setAttribute("data-bs-title", "Copiado");
+        button.setAttribute("data-bs-title", "Copied!");
         tooltip = new bootstrap.Tooltip(button, 
           { trigger: "manual", 
             customClass: "code-copy-button-tooltip",
@@ -674,44 +502,7 @@ ul.task-list li input[type="checkbox"] {
     }
   });
   </script>
-<nav class="page-navigation">
-  <div class="nav-page nav-page-previous">
-      <a href="./capitulo_1.html" class="pagination-link" aria-label="R &amp; LA IDE">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">R &amp; LA IDE</span></span>
-      </a>          
-  </div>
-  <div class="nav-page nav-page-next">
-      <a href="./capitulo_3.html" class="pagination-link" aria-label="REPOSITORIOS">
-        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">REPOSITORIOS</span></span> <i class="bi bi-arrow-right-short"></i>
-      </a>
-  </div>
-</nav>
 </div> <!-- /content -->
-<footer class="footer">
-  <div class="nav-footer">
-    <div class="nav-footer-left">
-<p>© 2026 Jairo Ricardo Villanueva-Toledo.</p>
-</div>   
-    <div class="nav-footer-center">
-      &nbsp;
-    </div>
-    <div class="nav-footer-right">
-      <ul class="footer-items list-unstyled">
-    <li class="nav-item">
-    <a class="nav-link" href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.es">
-<p>Licencia: CC BY-NC-ND 4.0</p>
-</a>
-  </li>  
-    <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/jvillanuevatoledo">
-      <i class="bi bi-github" role="img">
-</i> 
-    </a>
-  </li>  
-</ul>
-    </div>
-  </div>
-</footer>
 
 
 

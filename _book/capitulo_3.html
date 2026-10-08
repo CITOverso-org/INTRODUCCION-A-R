@@ -23,7 +23,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -85,7 +104,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./capitulo_1.html">I. FUNDAMENTOS</a></li><li class="breadcrumb-item"><a href="./capitulo_3.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">REPOSITORIOS</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./capitulo_1.html">I. EL ENTORNO</a></li><li class="breadcrumb-item"><a href="./capitulo_3.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">REPOSITORIOS</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Buscar" onclick="window.quartoOpenSearch();">
@@ -143,7 +162,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
- <span class="menu-text">I. FUNDAMENTOS</span></a>
+ <span class="menu-text">I. EL ENTORNO</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Alternar sección">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -172,7 +191,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
- <span class="menu-text">II. XXX</span></a>
+ <span class="menu-text">II. FORMATO DE TABLAS</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Alternar sección">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -226,7 +245,7 @@ ul.task-list li input[type="checkbox"] {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./capitulo_1.html">I. FUNDAMENTOS</a></li><li class="breadcrumb-item"><a href="./capitulo_3.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">REPOSITORIOS</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./capitulo_1.html">I. EL ENTORNO</a></li><li class="breadcrumb-item"><a href="./capitulo_3.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">REPOSITORIOS</span></a></li></ol></nav>
 <div class="quarto-title">
 <h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">REPOSITORIOS</span></h1>
 </div>
@@ -247,19 +266,22 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="repositorio-de-paquetes-de-r" class="level2" data-number="3.1">
 <h2 data-number="3.1" class="anchored" data-anchor-id="repositorio-de-paquetes-de-r"><span class="header-section-number">3.1</span> Repositorio de paquetes de R</h2>
-<p>Un <strong>repositorio de paquetes</strong> de R es una plataforma centralizada que almacena, organiza y distribuye colecciones de código, funciones, datos y documentación listos para ser instalados y utilizados en el entorno R.</p>
+<p>Un <strong>repositorio de paquetes</strong> en R es una plataforma centralizada que almacena, valida y distribuye colecciones de código, funciones, datos y documentación. Funcionan de manera similar a una tienda de aplicaciones: permiten que cualquier usuario instale herramientas desarrolladas por la comunidad científica y las incorpore de forma inmediata a su sesión de trabajo.</p>
+<p>Para el análisis de citometría de flujo, interactuaremos principalmente con dos ecosistemas complementarios: <a href="https://cran.r-project.org/"><strong>CRAN</strong></a> (para herramientas estadísticas y de visualización general) y <a href="https://www.bioconductor.org/"><strong>Bioconductor</strong></a> (para el tratamiento especializado de datos biológicos).</p>
 <section id="cran" class="level3" data-number="3.1.1">
 <h3 data-number="3.1.1" class="anchored" data-anchor-id="cran"><span class="header-section-number">3.1.1</span> <strong>CRAN</strong></h3>
-<p>Mientras que el repositorio genérico más conocido es <a href="https://cran.r-project.org/">CRAN</a> (<em>Comprehensive R Archive Network</em>), la comunidad científica utiliza repositorios especializados que agrupan herramientas para disciplinas específicas, como la bioinformática.</p>
+<p>La Red Integral de Archivos de R (<em>Comprehensive R Archive Network</em>, CRAN) es el repositorio oficial y más extenso del lenguaje R <span class="citation" data-cites="mora-cantallopsComplexNetworkAnalysis2020">(<a href="references.html#ref-mora-cantallopsComplexNetworkAnalysis2020" role="doc-biblioref">1</a>)</span>. Mantenido por una red global de servidores coordinada por el <em>R Core Team</em>, CRAN no solo aloja el código fuente y los instaladores del sistema base de R, sino también miles de paquetes contribuidos por desarrolladores de todo el mundo.</p>
+<p>Los paquetes publicados en CRAN deben superar rigurosas pruebas automáticas de estabilidad, portabilidad y documentación antes de ser aceptados <span class="citation" data-cites="hornikComprehensiveArchiveNetwork2012">(<a href="references.html#ref-hornikComprehensiveArchiveNetwork2012" role="doc-biblioref">2</a>)</span>. En nuestro flujo de trabajo, utilizaremos CRAN principalmente para instalar paquetes de manipulación tabular y visualización de datos, tales como el ecosistema <code>tidyvers</code>, <code>ggplot2</code> o utilidades de lectura de tablas.</p>
 </section>
 <section id="bioconductor" class="level3" data-number="3.1.2">
 <h3 data-number="3.1.2" class="anchored" data-anchor-id="bioconductor"><span class="header-section-number">3.1.2</span> <strong>Bioconductor</strong></h3>
-<p>En el análisis de datos de citometría de flujo, el repositorio de referencia indiscutible es <a href="https://www.bioconductor.org/">Bioconductor</a>. A diferencia de los repositorios generales, Bioconductor está optimizado para la investigación biomédica y ofrece ventajas esenciales:</p>
+<p>A diferencia de CRAN, cuyo alcance es de propósito general, <strong>Bioconductor</strong> es un repositorio fundado específicamente para la bioinformática y el análisis computacional de datos genómicos y biomédicos de alto rendimiento.</p>
+<p>En citometría de flujo, Bioconductor constituye el estándar de referencia indispensable debido a dos pilares fundamentales:</p>
 <ul>
-<li><p><strong>Actualizaciones coordinadas</strong>: Los paquetes se lanzan y actualizan dos veces al año, garantizando la compatibilidad entre versiones.</p></li>
-<li><p><strong>Estandarización</strong>: Define clases de datos comunes (como flowFrame y flowSet) para que diferentes herramientas interactúen sin fricciones al leer archivos estándar de citometría (.fcs).</p></li>
+<li><p><strong>Actualizaciones coordinadas y estabilidad</strong>: Bioconductor publica dos versiones al año sincronizadas con las versiones de R. Este modelo evita conflictos de dependencias y asegura que los paquetes sean plenamente compatibles entre sí.</p></li>
+<li><p><strong>Estandarización de estructuras de datos</strong>: Establece clases de objetos formales y compartidas (como <code>flowFrame</code> para una muestra individual o <code>flowSet</code> para una colección de muestras). Esto garantiza que distintas herramientas analíticas puedan leer, transformar e intercambiar información de archivos estándar .fcs sin errores de incompatibilidad.</p></li>
 </ul>
-<p>R cuenta con una suite especializada de paquetes para cada etapa del flujo de trabajo:</p>
+<p>Dentro de este ecosistema, existe una suite especializada de paquetes que cubre cada etapa del flujo analítico básico:</p>
 <table class="caption-top table">
 <caption>El ecosistema clave en Bioconductor</caption>
 <colgroup>
@@ -317,6 +339,14 @@ ul.task-list li input[type="checkbox"] {
 </div>
 
 
+<div id="refs" class="references csl-bib-body" role="list" style="display: none">
+<div id="ref-mora-cantallopsComplexNetworkAnalysis2020" class="csl-entry" role="listitem">
+<div class="csl-left-margin">1. </div><div class="csl-right-inline">Mora-Cantallops M, Sánchez-Alonso S, García-Barriocanal E. A Complex Network Analysis of the <span>Comprehensive R Archive Network</span> (<span>CRAN</span>) Package Ecosystem. Journal of Systems and Software. diciembre de 2020;170:110744. doi:<a href="https://doi.org/10.1016/j.jss.2020.110744">10.1016/j.jss.2020.110744</a></div>
+</div>
+<div id="ref-hornikComprehensiveArchiveNetwork2012" class="csl-entry" role="listitem">
+<div class="csl-left-margin">2. </div><div class="csl-right-inline">Hornik K. The <span>Comprehensive R Archive Network</span>. WIREs Computational Statistics. julio de 2012;4(4):394-8. doi:<a href="https://doi.org/10.1002/wics.1212">10.1002/wics.1212</a></div>
+</div>
+</div>
 </section>
 
 </main> <!-- /main -->

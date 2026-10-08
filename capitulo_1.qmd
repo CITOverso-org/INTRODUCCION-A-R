@@ -2,6 +2,8 @@
 
 [R](https://www.r-project.org/) es un lenguaje de programación y un entorno de software libre (código abierto) especializado en computación estadística, análisis de datos y gráficos. En el campo de la bioinformática, R se ha convertido en uno de los estándares fundamentales de la industria y la investigación científica.
 
+El lenguaje de programación R es ampliamente utilizado entre estadísticos y mineros de datos para desarrollar bibliotecas de análisis de datos y estadísticas, al mismo tiempo que es uno de los lenguajes más populares entre los científicos de datos gracias a su flexibilidad y capacidad de expansión, ya que R puede ampliarse a través de paquetes creados por el usuario.
+
 - **Enfoque analítico**: Fue diseñado específicamente por y para estadísticos, investigadores y científicos de datos.
 
 - **Ecosistema de paquetes**: Cuenta con miles de [librerías](https://cran.r-project.org/web/packages/available_packages_by_name.html) adicionales que permiten desde análisis genómicos complejos hasta la manipulación de millones de eventos celulares.

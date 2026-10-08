@@ -1,0 +1,25 @@
+En R, hay una diferencia clara entre un **Error** (que detiene el proceso y hace que falle) y un **Warning message** (una simple advertencia informativa).
+
+¿Qué significa cada mensaje?
+`The downloaded source packages are in ...\downloaded_packages`
+
+Este es un mensaje rutinario de confirmación. Significa que R descargó con éxito los archivos de instalación y los guardó en tu carpeta temporal para procesarlos.
+
+`Warning messages: ... Some listed binary packages have no source`
+
+Ocurre cuando R consulta los servidores de repositorios (CRAN o Bioconductor) y detecta que para algunos paquetes existe el binario precompilado para Windows, pero el servidor no tiene publicado el código fuente (*source*) exacto en ese mismo índice, o viceversa.
+
+**Impacto**: Ninguno para el uso habitual. R simplemente instaló la versión binaria precompilada (que además es la recomendada en Windows para no tener que compilar herramientas en C/C++).
+
+Cómo comprobar que el paquete quedó bien instalado
+Para confirmar que el paquete se instaló correctamente y está listo para usarse, cárgalo en tu consola de R con:
+
+:::{.fragment}
+```{r}
+library(PeacoQC)
+```
+:::
+
+Si no sale ningún mensaje de error en rojo (o solo salen mensajes de bienvenida/carga), el paquete está instalado correctamente.
+
+Si aparece: `Error in library(...) : there is no package called...`, entonces la instalación no se completó y requerirá reinstalarse.
