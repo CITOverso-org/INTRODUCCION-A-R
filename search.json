@@ -74,9 +74,9 @@
     "href": "capitulo_1.html",
     "title": "1  R & LA IDE",
     "section": "",
-    "text": "1.1 ¿Por qué usar R en lugar de software manual?\nR es un lenguaje de programación y un entorno de software libre (código abierto) especializado en computación estadística, análisis de datos y gráficos. En el campo de la bioinformática, R se ha convertido en uno de los estándares fundamentales de la industria y la investigación científica.",
+    "text": "1.1 ¿Por qué usar R en lugar de software manual?\nR es un lenguaje de programación y un entorno de software libre (código abierto) especializado en computación estadística, análisis de datos y gráficos. En el campo de la bioinformática, R se ha convertido en uno de los estándares fundamentales de la industria y la investigación científica.\nEl lenguaje de programación R es ampliamente utilizado entre estadísticos y mineros de datos para desarrollar bibliotecas de análisis de datos y estadísticas, al mismo tiempo que es uno de los lenguajes más populares entre los científicos de datos gracias a su flexibilidad y capacidad de expansión, ya que R puede ampliarse a través de paquetes creados por el usuario.",
     "crumbs": [
-      "I. FUNDAMENTOS",
+      "I. EL ENTORNO",
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>R & LA IDE</span>"
     ]
   },
@@ -87,7 +87,7 @@
     "section": "",
     "text": "Automatización y escalabilidad: Un análisis manual en interfaces visuales requiere trazar compuertas (gates) muestra por muestra. En R, una rutina procesa cientos de archivos en minutos con los mismos parámetros exactos.\nControl de sesgo: Las compuertas algorítmicas y estadísticas reducen la variabilidad inter-operador típica del gating manual.\nManejo de citometría multiparamétrica: En paneles modernos de más de 20 a 50 parámetros (como en citometría espectral o CyTOF/citometría de masas), el análisis bivariado clásico es insuficiente. R aporta algoritmos de reducción de dimensionalidad y agrupamiento no supervisado.",
     "crumbs": [
-      "I. FUNDAMENTOS",
+      "I. EL ENTORNO",
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>R & LA IDE</span>"
     ]
   },
@@ -98,7 +98,7 @@
     "section": "2.1 Arquitectura moderna en ciencia de datos",
     "text": "2.1 Arquitectura moderna en ciencia de datos\nA diferencia de otros editores genéricos, Positron no nace desde cero, sino que combina de manera fluida lo mejor de dos mundos. Por un lado, al haber sido construido como una rama de Visual Studio Code, hereda de inmediato la potencia de su arquitectura: una interfaz de codificación ultramoderna, un rendimiento de memoria excepcionalmente veloz y acceso a un ecosistema masivo de extensiones y personalización avanzada. Por el otro, el equipo de Posit ha inyectado en esta estructura toda la experiencia acumulada durante más de una década creando y manteniendo RStudio. El resultado no es un simple editor de texto general al que se le añaden complementos, sino un entorno diseñado desde su núcleo por y para científicos de datos.\nAl trabajar en la automatización de los análisis citométricos, Positron ofrece funciones críticas orientadas a mejorar la reproducibilidad y la velocidad de ejecución:\n\nExplorador de Datos Integrado: Permite inspeccionar data frames, matrices y estructuras complejas de manera visual y de alto rendimiento, ideal para verificar las dimensiones de las matrices de expresión celular o metadatos de archivos FCS.\nGestión Inteligente de Intérpretes: Permite cambiar entre diferentes versiones de R o entornos virtuales de Python con un solo clic, garantizando que los proyectos de Bioconductor utilicen siempre las dependencias correctas.\nAsistencia de IA Nativa: Ayuda a depurar scripts, optimizar bucles de análisis o autocompletar código de gráficos complejos rápidamente.",
     "crumbs": [
-      "I. FUNDAMENTOS",
+      "I. EL ENTORNO",
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>R & LA IDE</span>"
     ]
   },
@@ -109,7 +109,7 @@
     "section": "2.2 Anatomía del entorno de trabajo en Positron",
     "text": "2.2 Anatomía del entorno de trabajo en Positron\nLa interfaz de Positron ha sido meticulosamente estructurada para maximizar la eficiencia en el análisis de datos. Si se viene de entornos tradicionales como RStudio o VS Code, se notará un diseño familiar pero profundamente optimizado para flujos de trabajo científicos.\nLos componentes principales que gobiernan este IDE se dividen en cinco zonas (Figura 1) clave:\n\nBarra de Actividad (Activity Bar): Ubicada habitualmente en el extremo lateral, funciona como el centro de control global del IDE. Proporciona acceso inmediato a módulos esenciales como el Explorador de archivos, el motor de Búsqueda indexada, el sistema de Control de Versiones (Git), la gestión de Extensiones y las configuraciones del sistema.\nBarra Lateral Principal (Primary Side Bar): Este panel dinámico muta su contenido según el módulo activo en la Barra de Actividad. Por ejemplo, al activar la vista de gestión de archivos, se despliega aquí un árbol de directorios interactivo para navegar por las carpetas del proyecto.\nEditor de Código (Editor): El núcleo operativo de la interfaz. Es el área de alta velocidad destinada a la escritura de scripts de R, archivos Quarto (.qmd) o código Python, equipado con autocompletado inteligente, resaltado de sintaxis y asistencia en tiempo real.\nPanel Central Inferior (Console & Terminal): La zona de ejecución interactiva. Aloja las consolas nativas de programación (donde se interpretan y devuelven los comandos de R o Python de forma inmediata) y la Terminal del sistema operativo para tareas de administración del entorno.\nBarra Lateral Secundaria (Secondary Side Bar): La innovación analítica de Positron. Este panel está dedicado exclusivamente a la inspección de la ciencia de datos en ejecución: aquí se auditan las variables cargadas en el entorno (Environment), se previsualizan los gráficos generados, se consulta la documentación técnica de las funciones y se interactúa con el Explorador de Datos integrado.\n\n\n \nFigura 1. Entorno de trabajo Positron",
     "crumbs": [
-      "I. FUNDAMENTOS",
+      "I. EL ENTORNO",
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>R & LA IDE</span>"
     ]
   },
@@ -120,7 +120,7 @@
     "section": "",
     "text": "2.1 Paquetes de R\nUn paquete de R es un conjunto estandarizado de funciones, código, datos y documentación que amplía las capacidades base del lenguaje. En el ámbito de la citometría de flujo, un paquete funciona como una caja de herramientas especializada que traduce algoritmos complejos y operaciones estadísticas en comandos sencillos, permitiendo procesar millones de eventos celulares sin tener que programar cada procedimiento desde cero.",
     "crumbs": [
-      "I. FUNDAMENTOS",
+      "I. EL ENTORNO",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>PAQUETES</span>"
     ]
   },
@@ -131,7 +131,7 @@
     "section": "2.2 Paquetes en citometría de flujo",
     "text": "2.2 Paquetes en citometría de flujo\nLa citometría de flujo genera archivos complejos (.fcs) con datos multidimensionales difíciles de manejar con software tradicional. Los paquetes especializados están diseñados para cubrir cada etapa del flujo de trabajo analítico:\n\nLectura e importación: Permiten cargar archivos .fcs y estructurar los datos en matrices organizadas dentro de R.\nPreprocesamiento: Facilitan la compensación de fluorescencia (corrección de la superposición espectral entre fluoróforos) y las transformaciones matemáticas de los ejes.\nIdentificación celular (gating): Ofrecen herramientas para delimitar poblaciones celulares de forma manual, reproducible o mediante algoritmos automatizados.\nVisualización avanzada: Generan gráficos de dispersión, mapas de calor y proyecciones de alta dimensión (como t-SNE o UMAP).\n\nEjemplos esenciales de paquetes citométricos\n\nflowCore: Es la columna vertebral del ecosistema; define las clases de datos básicas (como flowFrame) para manipular la información cruda.\nflowViz: Se centra en la representación gráfica, permitiendo crear histogramas y diagramas de contorno adaptados a la citometría.\nopenCyto: Automatiza el proceso de gating para estandarizar la compuerta analítica en grandes estudios clínicos.\n\nEn resumen: Los paquetes actúan como el puente indispensable que transforma los datos crudos del citómetro en descubrimientos biológicos interpretables.",
     "crumbs": [
-      "I. FUNDAMENTOS",
+      "I. EL ENTORNO",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>PAQUETES</span>"
     ]
   },
@@ -140,9 +140,9 @@
     "href": "capitulo_3.html",
     "title": "3  REPOSITORIOS",
     "section": "",
-    "text": "3.1 Repositorio de paquetes de R\nUn repositorio de paquetes de R es una plataforma centralizada que almacena, organiza y distribuye colecciones de código, funciones, datos y documentación listos para ser instalados y utilizados en el entorno R.",
+    "text": "3.1 Repositorio de paquetes de R\nUn repositorio de paquetes en R es una plataforma centralizada que almacena, valida y distribuye colecciones de código, funciones, datos y documentación. Funcionan de manera similar a una tienda de aplicaciones: permiten que cualquier usuario instale herramientas desarrolladas por la comunidad científica y las incorpore de forma inmediata a su sesión de trabajo.\nPara el análisis de citometría de flujo, interactuaremos principalmente con dos ecosistemas complementarios: CRAN (para herramientas estadísticas y de visualización general) y Bioconductor (para el tratamiento especializado de datos biológicos).",
     "crumbs": [
-      "I. FUNDAMENTOS",
+      "I. EL ENTORNO",
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>REPOSITORIOS</span>"
     ]
   },
@@ -151,9 +151,9 @@
     "href": "capitulo_3.html#repositorio-de-paquetes-de-r",
     "title": "3  REPOSITORIOS",
     "section": "",
-    "text": "3.1.1 CRAN\nMientras que el repositorio genérico más conocido es CRAN (Comprehensive R Archive Network), la comunidad científica utiliza repositorios especializados que agrupan herramientas para disciplinas específicas, como la bioinformática.\n\n\n3.1.2 Bioconductor\nEn el análisis de datos de citometría de flujo, el repositorio de referencia indiscutible es Bioconductor. A diferencia de los repositorios generales, Bioconductor está optimizado para la investigación biomédica y ofrece ventajas esenciales:\n\nActualizaciones coordinadas: Los paquetes se lanzan y actualizan dos veces al año, garantizando la compatibilidad entre versiones.\nEstandarización: Define clases de datos comunes (como flowFrame y flowSet) para que diferentes herramientas interactúen sin fricciones al leer archivos estándar de citometría (.fcs).\n\nR cuenta con una suite especializada de paquetes para cada etapa del flujo de trabajo:\n\nEl ecosistema clave en Bioconductor\n\n\n\n\n\n\n\nEtapa\nPaquetes de R\nFunción principal\n\n\n\n\nImportación e infraestructura\nflowCore\nLectura de archivos estándar .fcs, manipulación de metadatos, matrices de compensación y objetos flowFrame / flowSet\n\n\nGating reproducible\nflowWorkspace, openCyto\nImportación de espacios de trabajo y gatings automáticas basadas en densidad y modelos de mezclas gaussianas\n\n\nVisualización estándar\nflowViz, ggcyto\nExtensión de ggplot2 adaptada para citometría: histogramas, gráficos de densidad y visualización de compuertas 2D\n\n\nReducción de dimensionalidad\nRtsne, uwot (UMAP)\nProyección de poblaciones celulares complejas en espacios bidimensionales interactivos.\n\n\nClustering no supervisado\nFlowSOM, PhenoGraph\nAgrupamiento automatizado de subpoblaciones celulares utilizando mapas autoorganizados y grafos de vecindad.\n\n\nAnálisis diferencial\ndiffcyt\nDetección estadística de cambios en la abundancia de poblaciones o en la expresión de marcadores funcionales entre condiciones experimentales.",
+    "text": "3.1.1 CRAN\nLa Red Integral de Archivos de R (Comprehensive R Archive Network, CRAN) es el repositorio oficial y más extenso del lenguaje R (1). Mantenido por una red global de servidores coordinada por el R Core Team, CRAN no solo aloja el código fuente y los instaladores del sistema base de R, sino también miles de paquetes contribuidos por desarrolladores de todo el mundo.\nLos paquetes publicados en CRAN deben superar rigurosas pruebas automáticas de estabilidad, portabilidad y documentación antes de ser aceptados (2). En nuestro flujo de trabajo, utilizaremos CRAN principalmente para instalar paquetes de manipulación tabular y visualización de datos, tales como el ecosistema tidyvers, ggplot2 o utilidades de lectura de tablas.\n\n\n3.1.2 Bioconductor\nA diferencia de CRAN, cuyo alcance es de propósito general, Bioconductor es un repositorio fundado específicamente para la bioinformática y el análisis computacional de datos genómicos y biomédicos de alto rendimiento.\nEn citometría de flujo, Bioconductor constituye el estándar de referencia indispensable debido a dos pilares fundamentales:\n\nActualizaciones coordinadas y estabilidad: Bioconductor publica dos versiones al año sincronizadas con las versiones de R. Este modelo evita conflictos de dependencias y asegura que los paquetes sean plenamente compatibles entre sí.\nEstandarización de estructuras de datos: Establece clases de objetos formales y compartidas (como flowFrame para una muestra individual o flowSet para una colección de muestras). Esto garantiza que distintas herramientas analíticas puedan leer, transformar e intercambiar información de archivos estándar .fcs sin errores de incompatibilidad.\n\nDentro de este ecosistema, existe una suite especializada de paquetes que cubre cada etapa del flujo analítico básico:\n\nEl ecosistema clave en Bioconductor\n\n\n\n\n\n\n\nEtapa\nPaquetes de R\nFunción principal\n\n\n\n\nImportación e infraestructura\nflowCore\nLectura de archivos estándar .fcs, manipulación de metadatos, matrices de compensación y objetos flowFrame / flowSet\n\n\nGating reproducible\nflowWorkspace, openCyto\nImportación de espacios de trabajo y gatings automáticas basadas en densidad y modelos de mezclas gaussianas\n\n\nVisualización estándar\nflowViz, ggcyto\nExtensión de ggplot2 adaptada para citometría: histogramas, gráficos de densidad y visualización de compuertas 2D\n\n\nReducción de dimensionalidad\nRtsne, uwot (UMAP)\nProyección de poblaciones celulares complejas en espacios bidimensionales interactivos.\n\n\nClustering no supervisado\nFlowSOM, PhenoGraph\nAgrupamiento automatizado de subpoblaciones celulares utilizando mapas autoorganizados y grafos de vecindad.\n\n\nAnálisis diferencial\ndiffcyt\nDetección estadística de cambios en la abundancia de poblaciones o en la expresión de marcadores funcionales entre condiciones experimentales.",
     "crumbs": [
-      "I. FUNDAMENTOS",
+      "I. EL ENTORNO",
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>REPOSITORIOS</span>"
     ]
   },
@@ -164,7 +164,7 @@
     "section": "",
     "text": "5 \n\n\nHecho con 💙 por Jairo",
     "crumbs": [
-      "II. XXX",
+      "II. FORMATO DE TABLAS",
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>ACTIVIDADES DE APRENDIZAJE</span>"
     ]
   },
@@ -175,7 +175,7 @@
     "section": "",
     "text": "Hecho con 💙 por Jairo",
     "crumbs": [
-      "II. XXX",
+      "II. FORMATO DE TABLAS",
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>CAPÍTULO 5</span>"
     ]
   },
@@ -187,6 +187,16 @@
     "text": "In summary, this book has no content whatsoever.",
     "crumbs": [
       "Síntesis"
+    ]
+  },
+  {
+    "objectID": "references.html",
+    "href": "references.html",
+    "title": "Referencias",
+    "section": "",
+    "text": "1. Hornik K. The Comprehensive R Archive\nNetwork. WIREs Computational Statistics. 2012 Jul;4(4):394–8.\ndoi:10.1002/wics.1212\n\n\n2. Mora-Cantallops M, Sánchez-Alonso S,\nGarcía-Barriocanal E. A complex network analysis of the\nComprehensive R Archive Network (CRAN) package\necosystem. Journal of Systems and Software. 2020 Dec;170:110744. doi:10.1016/j.jss.2020.110744",
+    "crumbs": [
+      "Referencias"
     ]
   }
 ]
